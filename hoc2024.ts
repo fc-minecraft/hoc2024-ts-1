@@ -15,19 +15,33 @@ enum Keys {
     G
 }
 enum Instruments {
-    Pling,
-    Xylophone,
-    Guitar,
-    Flute,
-    Bit,
-    Bells,
-    Bass
+    //% blockIdentity="blocks.custom" enumval=0 block="Pling"
+    //% jres alias=Pling
+    Pling = 0,
+    //% blockIdentity="blocks.custom" enumval=1 block="Xylophone"
+    //% jres alias=Xylophone
+    Xylophone = 1,
+    //% blockIdentity="blocks.custom" enumval=2 block="Guitar"
+    //% jres alias=Guitar
+    Guitar = 2,
+    //% blockIdentity="blocks.custom" enumval=3 block="Flute"
+    //% jres alias=Flute
+    Flute = 3,
+    //% blockIdentity="blocks.custom" enumval=4 block="Bit"
+    //% jres alias=Bit
+    Bit = 4,
+    //% blockIdentity="blocks.custom" enumval=5 block="Bells"
+    //% jres alias=Bells
+    Bells = 5,
+    //% blockIdentity="blocks.custom" enumval=6 block="Bass"
+    //% jres alias=Bass
+    Bass = 6
 }
 
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2024 {
 
-    //% block="k %k i1 %i1"
+    //% block="Key: %k i1 %i1"
     export function testInstrument(i1: Instruments, i2: Instruments, i3: Instruments, k: Keys, d: Drums ): void {
         switch (i1) {
             case Instruments.Pling:
