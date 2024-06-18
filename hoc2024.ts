@@ -44,7 +44,11 @@ namespace hoc2024 {
     //% block="key %k %i1 %i2 drum %d"
     //% i1.fieldEditor="gridpicker"
     //% i1.fieldOptions.columns=4
-    export function testInstrument(k: Keys, i1: Instruments, i2: Instruments, d: Drums ): void {
+    //% i2.fieldEditor="gridpicker"
+    //% i2.fieldOptions.columns=4
+    //% i3.fieldEditor="gridpicker"
+    //% i3.fieldOptions.columns=4
+    export function testInstrument(k: Keys, i1: Instruments, i2: Instruments, i3: Instruments, d: Drums ): void {
         switch (i1) {
             case Instruments.Pling:
                 player.say("Pling")
