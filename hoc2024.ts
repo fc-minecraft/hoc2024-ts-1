@@ -41,7 +41,7 @@ enum Instruments {
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2024 {
 
-    //% block="key %k %i1 %i2 %i3 d %d"
+    //% block="key %k %i1 %i2 %i3 drum %d"
     //% i1.fieldEditor="gridpicker"
     //% i1.fieldOptions.columns=4
     //% i2.fieldEditor="gridpicker"
