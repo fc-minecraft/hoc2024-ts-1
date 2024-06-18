@@ -8,9 +8,9 @@
     },
     "files": [
         "README.md",
-        "main.ts",
         "Instruments.jres",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "hoc2024.ts"
     ],
     "testFiles": [],
     "targetVersions": {
