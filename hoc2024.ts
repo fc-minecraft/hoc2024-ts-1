@@ -41,7 +41,7 @@ enum Instruments {
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2024 {
 
-    //% block="Key: %k i1 %i1 i2 %i2 i3 %i3 d %d"
+    //% block="Key: %k i1 %i1"
     export function testInstrument(i1: Instruments, i2: Instruments, i3: Instruments, k: Keys, d: Drums ): void {
         switch (i1) {
             case Instruments.Pling:
