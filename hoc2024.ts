@@ -6,12 +6,19 @@ enum Drums {
 }
 
 enum Keys {
+    //% block = "a"
     A,
+    //% block = "b"
     B,
+    //% block = "c"
     C,
+    //% block = "d"
     D,
+    //% block = "e"
     E,
+    //% block = "f"
     F,
+    //% block = "g"
     G
 }
 enum Instruments {
