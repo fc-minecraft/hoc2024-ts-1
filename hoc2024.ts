@@ -17,25 +17,25 @@ enum Keys {
 enum Instruments {
     //% blockIdentity="blocks.custom" enumval=0 block="Pling"
     //% jres alias=Pling
-    Pling = 0,
+    Pling,
     //% blockIdentity="blocks.custom" enumval=1 block="Xylophone"
     //% jres alias=Xylophone
-    Xylophone = 1,
+    Xylophone,
     //% blockIdentity="blocks.custom" enumval=2 block="Guitar"
     //% jres alias=Guitar
-    Guitar = 2,
+    Guitar,
     //% blockIdentity="blocks.custom" enumval=3 block="Flute"
     //% jres alias=Flute
-    Flute = 3,
+    Flute,
     //% blockIdentity="blocks.custom" enumval=4 block="Bit"
     //% jres alias=Bit
-    Bit = 4,
+    Bit,
     //% blockIdentity="blocks.custom" enumval=5 block="Bells"
     //% jres alias=Bells
-    Bells = 5,
+    Bells,
     //% blockIdentity="blocks.custom" enumval=6 block="Bass"
     //% jres alias=Bass
-    Bass = 6
+    Bass
 }
 
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
