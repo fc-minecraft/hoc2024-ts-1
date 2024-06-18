@@ -9,7 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "Instruments.jres"
+        "Instruments.jres",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [],
     "public": true,
