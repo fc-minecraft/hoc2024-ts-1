@@ -134,6 +134,8 @@ namespace hoc2024 {
     }
 
     //% block="instrument %i"
+    //% i.fieldEditor="gridpicker"
+    //% i.fieldOptions.columns=4
     export function instrument(i: Instruments): void {
         switch (i) {
             case Instruments.Pling:
