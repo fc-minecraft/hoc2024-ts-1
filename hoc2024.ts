@@ -102,7 +102,7 @@ namespace hoc2024 {
         }
     }
 
-    //% block="key %k"
+    //% block="instrument %i"
     export function instrument(i: Instruments): void {
         switch (i) {
             case Instruments.Pling:
