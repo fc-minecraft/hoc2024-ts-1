@@ -42,9 +42,6 @@ enum Instruments {
 namespace hoc2024 {
 
     //% block="instrument %i"
-    //% i.fieldEditor="gridpicker"
-    //% i.fieldOptions.width=110
-    //% i.fieldOptions.columns=4
     export function testInstrument (i: Instruments): void{
         switch (i){
             case Instruments.Pling:
