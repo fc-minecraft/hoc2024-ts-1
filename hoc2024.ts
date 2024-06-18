@@ -133,9 +133,9 @@ namespace hoc2024 {
         }
     }
 
-    //% block="instrument %i"
-    export function instrument(i: Instruments): void {
-        switch (i) {
+    //% block="instrument %i1 %i2 %3"
+    export function instrument(i1: Instruments, i2: Instruments, i3: Instruments): void {
+        switch (i1) {
             case Instruments.Pling:
                 player.say("Pling")
                 break;
