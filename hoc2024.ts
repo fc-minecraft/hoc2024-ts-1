@@ -7,19 +7,19 @@ enum Drums {
 
 enum Keys {
     //% block = "a"
-    A,
+    A = 0,
     //% block = "b"
-    B,
+    B = 1,
     //% block = "c"
-    C,
+    C = 2,
     //% block = "d"
-    D,
+    D = 3,
     //% block = "e"
-    E,
+    E = 4,
     //% block = "f"
-    F,
+    F = 5,
     //% block = "g"
-    G
+    G = 6
 }
 enum Instruments {
     //% blockIdentity="blocks.custom" enumval=0 block="Pling"
