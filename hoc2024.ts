@@ -41,10 +41,14 @@ enum Instruments {
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2024 {
 
-    //% block="k %k i1 %i1 d %d"
+    //% block="key %k %i1 %i2 %i3 d %d"
     //% i1.fieldEditor="gridpicker"
     //% i1.fieldOptions.columns=4
-    export function testInstrument(k: Keys, i1: Instruments, d: Drums ): void {
+    //% i2.fieldEditor="gridpicker"
+    //% i2.fieldOptions.columns=4
+    //% i3.fieldEditor="gridpicker"
+    //% i3.fieldOptions.columns=4
+    export function testInstrument(k: Keys, i1: Instruments, i2: Instruments, i3: Instruments, d: Drums ): void {
         switch (i1) {
             case Instruments.Pling:
                 player.say("Pling")
