@@ -74,6 +74,37 @@ namespace hoc2024 {
         }
     }
 
+    //% block="key %k %i1 %i2"
+    //% i1.fieldEditor="gridpicker"
+    //% i1.fieldOptions.columns=4
+    //% i2.fieldEditor="gridpicker"
+    //% i2.fieldOptions.columns=4
+    export function testInstrument2(k: Keys, i1: Instruments, i2: Instruments): void {
+        switch (i1) {
+            case Instruments.Pling:
+                player.say("Pling")
+                break;
+            case Instruments.Xylophone:
+                player.say("Xylophone")
+                break;
+            case Instruments.Guitar:
+                player.say("Guitar")
+                break;
+            case Instruments.Flute:
+                player.say("Flute")
+                break;
+            case Instruments.Bit:
+                player.say("Bit")
+                break;
+            case Instruments.Bells:
+                player.say("Bells")
+                break;
+            case Instruments.Bass:
+                player.say("Bass")
+                break;
+        }
+    }
+
     //% block="key %k"
     export function note(k: Keys): void {
         switch (k) {
