@@ -6,20 +6,13 @@ enum Drums {
 }
 
 enum Keys {
-    //% block = "a"
-    A = 0,
-    //% block = "b"
-    B = 1,
-    //% block = "c"
-    C = 2,
-    //% block = "d"
-    D = 3,
-    //% block = "e"
-    E = 4,
-    //% block = "f"
-    F = 5,
-    //% block = "g"
-    G = 6
+    a,
+    b,
+    c,
+    d,
+    e,
+    f,
+    g
 }
 enum Instruments {
     //% blockIdentity="blocks.custom" enumval=0 block="Pling"
@@ -49,7 +42,7 @@ enum Instruments {
 namespace hoc2024 {
 
     //% block="k %k i1 %i1 d %d"
-    export function testInstrument(k: Keys, i1: Instruments, i2: Instruments, i3: Instruments, d: Drums ): void {
+    export function testInstrument(k: Keys, i1: Instruments, d: Drums ): void {
         switch (i1) {
             case Instruments.Pling:
                 player.say("Pling")
