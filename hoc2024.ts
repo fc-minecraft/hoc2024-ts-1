@@ -194,7 +194,7 @@ enum Instruments {
     //% blockIdentity="blocks.custom" enumval=6 block="Bass"
     //% jres alias=Bass
     Bass,
-    //% blockIdentity="blocks.custom" enumval=6 block="Piano"
+    //% blockIdentity="blocks.custom" enumval=7 block="Piano"
     //% jres alias=Piano
     Piano
 }
@@ -226,7 +226,7 @@ namespace hoc2024 {
             case Instruments.Bass:
                 player.say("Bass")
                 break;
-            case Instruments.Bass:
+            case Instruments.Piano:
                 player.say("Piano")
                 break;
         }
