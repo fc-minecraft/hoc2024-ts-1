@@ -1,29 +1,29 @@
 //enums
 
 enum Dances {
-    //% block="dance move 1"
+    //% block="woah"
     Move1,
-    //% block="dance move 2"
+    //% block="swagg bouncee"
     Move2,
-    //% block="dance move 3"
+    //% block="kangsta wok"
     Move3,
-    //% block="dance move 4"
+    //% block="smeeze"
     Move4,
-    //% block="dance move 5"
+    //% block="bust down"
     Move5,
-    //% block="dance move 6"
+    //% block="cosby walk"
     Move6,
-    //% block="dance move 7"
+    //% block="Mash potato"
     Move7,
-    //% block="dance move 8"
+    //% block="twist"
     Move8,
-    //% block="dance move 9"
+    //% block="locking"
     Move9,
-    //% block="dance move 10"
+    //% block="dougie"
     Move10,
-    //% block="dance move 11"
+    //% block="kick step"
     Move11,
-    //% block="dance move 12"
+    //% block="moonwalk"
     Move12
 
 }
