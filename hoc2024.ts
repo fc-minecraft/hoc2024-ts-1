@@ -81,7 +81,7 @@ namespace hoc2024 {
     }
 
     //% block="key %k"
-    export function note(k: Keys): void {
+    export function key(k: Keys): void {
         switch (k) {
             case Keys.Do:
                 player.say("do")
