@@ -1,74 +1,123 @@
 //enums
-enum HeadWear{
+
+enum Biome {
+    //% block="desert"
+    Biome0,
+    //% block="plain"
+    Biome1,
+    //% block="jungle"
+    Biome2,
+    //% block="forest"
+    Biome3,
+    //% block="badlands"
+    Biome4,
+    //% block="ocean"
+    Biome5,
+    //% block="taiga"
+    Biome6,
+    //% block="beach"
+    Biome7,
+    //% block="swamp"
+    Biome8
+}
+
+enum Time {
+    //% block="sunrise"
+    Time0,
+    //% block="noon"
+    Time1,
+    //% block="sunset"
+    Time2,
+    //% block="midnight"
+    Time3
+
+}
+
+enum WeatherA {
+    //% block="sunny"
+    Weather0,
+    //% block="rain"
+    Weather1,
+    //% block="snow"
+    Weather2,
+    //% block="thunderstorm"
+    Weather3,
+    //% block="lightning"
+    Weather4
+
+
+}
+
+enum HeadWear {
     //% block="glasses 1"
-    Head1,
+    Head0,
     //% block="glasses 2"
-    Head2,
+    Head1,
     //% block="sun glasses 1"
-    Head3,
+    Head2,
     //% block="sun glasses 2"
-    Head4,
+    Head3,
     //% block="cowboy hat"
-    Head5,
+    Head4,
     //% block="astronaut helmet"
-    Head6,
+    Head5,
     //% block="beard 1"
-    Head7,
+    Head6,
     //% block="beard 2"
-    Head8,
+    Head7,
     //% block="mask 1"
-    Head9,
+    Head8,
     //% block="mask 2"
-    Head10
+    Head9
 
 }
 
 enum MidWear {
     //% block="white tee"
-    Mid1,
+    Mid0,
     //% block="black tee"
-    Mid2,
+    Mid1,
     //% block="sports jersey"
-    Mid3,
+    Mid2,
     //% block="cowboy shirt"
-    Mid4,
+    Mid3,
     //% block="astronaut top"
-    Mid5,
+    Mid4,
     //% block="leather jacket"
-    Mid6,
+    Mid5,
     //% block="trench coat"
-    Mid7,
+    Mid6,
     //% block="bubble jacket"
-    Mid8,
+    Mid7,
     //% block="tank top"
-    Mid9,
+    Mid8,
     //% block="hawaiian shirt"
-    Mid10,
+    Mid9,
 
 
 }
 
 enum LowerWear {
     //% block="dark jeans"
-    Lower1,
+    Lower0,
     //% block="light jeans"
-    Lower2,
+    Lower1,
     //% block="baggy pants"
-    Lower3,
+    Lower2,
     //% block="black shorts"
-    Lower4,
+    Lower3,
     //% block="cargo pants"
-    Lower5,
+    Lower4,
     //% block="hip-hop pants"
-    Lower6,
+    Lower5,
     //% block="cowboy jeans"
-    Lower7,
+    Lower6,
     //% block="astronaut pants"
-    Lower8,
+    Lower7,
     //% block="leather pants"
-    Lower9,
+    Lower8,
     //% block="khakis"
-    Lower10
+    Lower9
 
 
 }
@@ -278,6 +327,9 @@ namespace hoc2024 {
     export function costume(u: HeadWear, m: MidWear, l: LowerWear): void {
         let costume_encoded
         switch (u) {
+            case HeadWear.Head0:
+                costume_encoded = "0"
+                break;
             case HeadWear.Head1:
                 costume_encoded = "1"
                 break;
@@ -305,11 +357,11 @@ namespace hoc2024 {
             case HeadWear.Head9:
                 costume_encoded = "9"
                 break;
-            case HeadWear.Head10:
-                costume_encoded = "10"
-                break;
         }
         switch (m) {
+            case MidWear.Mid0:
+                costume_encoded = costume_encoded.concat("0")
+                break;
             case MidWear.Mid1:
                 costume_encoded = costume_encoded.concat("1")
                 break;
@@ -337,12 +389,12 @@ namespace hoc2024 {
             case MidWear.Mid9:
                 costume_encoded = costume_encoded.concat("9")
                 break;
-            case MidWear.Mid10:
-                costume_encoded = costume_encoded.concat("10")
-                break;
 
         }
         switch (l) {
+            case LowerWear.Lower0:
+                costume_encoded = costume_encoded.concat("0")
+                break;
             case LowerWear.Lower1:
                 costume_encoded = costume_encoded.concat("1")
                 break;
@@ -370,10 +422,81 @@ namespace hoc2024 {
             case LowerWear.Lower9:
                 costume_encoded = costume_encoded.concat("9")
                 break;
-            case LowerWear.Lower10:
-                costume_encoded = costume_encoded.concat("10")
-                break;
 
         }
+        let player_say = "costume "
+        player_say = player_say.concat(costume_encoded)
+        player.say(player_say)
     }
+// END COSTUME ACTIVITY
+
+// SET DESIGN ACTIVITY
+    //% block="biome %b time %t weather %w"
+    export function seta(b: Biome, t: Time, w: WeatherA): void {
+        let set_encode
+        switch (b) {
+            case Biome.Biome0:
+                set_encode = "0"
+                break;
+            case Biome.Biome1:
+                set_encode = "1"
+                break;
+            case Biome.Biome2:
+                set_encode = "2"
+                break;
+            case Biome.Biome3:
+                set_encode = "3"
+                break;
+            case Biome.Biome4:
+                set_encode = "4"
+                break;
+            case Biome.Biome5:
+                set_encode = "5"
+                break;
+            case Biome.Biome6:
+                set_encode = "6"
+                break;
+            case Biome.Biome7:
+                set_encode = "7"
+                break;
+            case Biome.Biome8:
+                set_encode = "8"
+                break;
+        }
+        switch (t) {
+            case Time.Time0:
+                set_encode = set_encode.concat("0")
+                break;
+            case Time.Time1:
+                set_encode = set_encode.concat("1")
+                break;
+            case Time.Time2:
+                set_encode = set_encode.concat("2")
+                break;
+            case Time.Time3:
+                set_encode = set_encode.concat("3")
+                break;
+        }
+        switch (w) {
+            case WeatherA.Weather0:
+                set_encode = set_encode.concat("0")
+                break;
+            case WeatherA.Weather1:
+                set_encode = set_encode.concat("1")
+                break;
+            case WeatherA.Weather2:
+                set_encode = set_encode.concat("2")
+                break;
+            case WeatherA.Weather3:
+                set_encode = set_encode.concat("3")
+                break;
+            case WeatherA.Weather4:
+                set_encode = set_encode.concat("4")
+                break;
+        }
+        let player_say = "set "
+        player_say = player_say.concat(set_encode)
+        player.say(player_say)
+    }
+// END SET DESIGN ACTIVITY
 }
