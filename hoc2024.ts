@@ -13,7 +13,7 @@ enum Dances {
     Move5,
     //% block="cosby walk"
     Move6,
-    //% block="Mash potato"
+    //% block="mash potato"
     Move7,
     //% block="twist"
     Move8,
