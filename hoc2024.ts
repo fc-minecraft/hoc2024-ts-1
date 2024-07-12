@@ -1,4 +1,33 @@
 //enums
+
+enum Dances {
+    //% block="dance move 1"
+    Move1,
+    //% block="dance move 2"
+    Move2,
+    //% block="dance move 3"
+    Move3,
+    //% block="dance move 4"
+    Move4,
+    //% block="dance move 5"
+    Move5,
+    //% block="dance move 6"
+    Move6,
+    //% block="dance move 7"
+    Move7,
+    //% block="dance move 8"
+    Move8,
+    //% block="dance move 9"
+    Move9,
+    //% block="dance move 10"
+    Move10,
+    //% block="dance move 11"
+    Move11,
+    //% block="dance move 12"
+    Move12
+
+}
+
 enum Drums {
     //% block="slow"
     Slow,
@@ -51,6 +80,7 @@ enum Instruments {
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2024 {
 
+// MUSIC ACTIVITY
     //% block="instrument %i"
     //% i.fieldEditor="gridpicker"
     //% i.fieldOptions.columns=4
@@ -109,8 +139,8 @@ namespace hoc2024 {
     }
 
     //% block="drums %s"
-    export function drums(s: Drums): void {
-        switch (s) {
+    export function drums(d: Drums): void {
+        switch (d) {
             case Drums.Slow:
                 player.say("drums slow")
                 break;
@@ -122,4 +152,50 @@ namespace hoc2024 {
                 break;
         }
     }
+// END MUSIC ACTIVITY
+
+// DANCE ACTIVITY
+    //% block="dance step %s"
+    export function dances(d: Dances): void {
+        switch (d) {
+            case Dances.Move1:
+                player.say("Dance Move 1")
+                break;
+            case Dances.Move2:
+                player.say("Dance Move 2")
+                break;
+            case Dances.Move3:
+                player.say("Dance Move 3")
+                break;
+            case Dances.Move4:
+                player.say("Dance Move 4")
+                break;
+            case Dances.Move5:
+                player.say("Dance Move 5")
+                break;
+            case Dances.Move6:
+                player.say("Dance Move 6")
+                break;
+            case Dances.Move7:
+                player.say("Dance Move 7")
+                break;
+            case Dances.Move8:
+                player.say("Dance Move 8")
+                break;
+            case Dances.Move9:
+                player.say("Dance Move 9")
+                break;
+            case Dances.Move10:
+                player.say("Dance Move 10")
+                break;
+            case Dances.Move11:
+                player.say("Dance Move 11")
+                break;
+            case Dances.Move12:
+                player.say("Dance Move 12")
+                break;
+
+        }
+    }
+// END DANCE ACTIVITY
 }
