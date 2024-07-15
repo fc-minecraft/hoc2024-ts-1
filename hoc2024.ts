@@ -202,6 +202,14 @@ enum Instruments {
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2024 {
 
+
+// TUTORIAL ACTIVITY
+    //% block="raise hand"
+    export function raise_hand(): void {
+        player.say("hand raised")
+    }
+
+
 // MUSIC ACTIVITY
     //% block="instrument %i"
     //% i.fieldEditor="gridpicker"
