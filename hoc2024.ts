@@ -206,7 +206,7 @@ namespace hoc2024 {
 // TUTORIAL ACTIVITY
     //% block="raise hand"
     export function raise_hand(): void {
-        player.say("hand raised")
+        player.execute("scoreboard players set .output global 1")
     }
 
 
