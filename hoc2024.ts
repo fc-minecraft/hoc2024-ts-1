@@ -1,48 +1,48 @@
 //enums
 
 enum Biome {
-    //% block="desert"
-    Biome0,
-    //% block="plain"
+    //% block="savannah"
     Biome1,
-    //% block="jungle"
-    Biome2,
-    //% block="forest"
-    Biome3,
-    //% block="badlands"
-    Biome4,
-    //% block="ocean"
-    Biome5,
     //% block="taiga"
+    Biome2,
+    //% block="desert"
+    Biome3,
+    //% block="jungle"
+    Biome4,
+    //% block="forest"
+    Biome5,
+    //% block="ocean"
     Biome6,
-    //% block="beach"
+    //% block="nether"
     Biome7,
-    //% block="swamp"
-    Biome8
+    //% block="end"
+    Biome8,
+    //% block="city"
+    Biome9,
+    //% block="space"
+    Biome10
 }
 
 enum Time {
     //% block="sunrise"
-    Time0,
-    //% block="noon"
     Time1,
-    //% block="sunset"
+    //% block="day"
     Time2,
-    //% block="midnight"
-    Time3
+    //% block="sunset"
+    Time3,
+    //% block="night"
+    Time4
 
 }
 
 enum WeatherA {
-    //% block="sunny"
-    Weather0,
-    //% block="rain"
+    //% block="clear"
     Weather1,
     //% block="snow"
     Weather2,
-    //% block="thunderstorm"
+    //% block="rain"
     Weather3,
-    //% block="lightning"
+    //% block="thunderstorm"
     Weather4
 
 
@@ -50,74 +50,51 @@ enum WeatherA {
 
 enum HeadWear {
     //% block="glasses 1"
-    Head0,
-    //% block="glasses 2"
     Head1,
-    //% block="sun glasses 1"
+    //% block="glasses 2"
     Head2,
-    //% block="sun glasses 2"
+    //% block="sun glasses 1"
     Head3,
-    //% block="cowboy hat"
+    //% block="sun glasses 2"
     Head4,
-    //% block="astronaut helmet"
+    //% block="cowboy hat"
     Head5,
-    //% block="beard 1"
-    Head6,
-    //% block="beard 2"
-    Head7,
-    //% block="mask 1"
-    Head8,
-    //% block="mask 2"
-    Head9
+    //% block="astronaut helmet"
+    Head6
 
 }
 
 enum MidWear {
     //% block="white tee"
-    Mid0,
-    //% block="black tee"
     Mid1,
-    //% block="sports jersey"
+    //% block="black tee"
     Mid2,
-    //% block="cowboy shirt"
+    //% block="sports jersey"
     Mid3,
-    //% block="astronaut top"
+    //% block="cowboy shirt"
     Mid4,
-    //% block="leather jacket"
+    //% block="astronaut top"
     Mid5,
-    //% block="trench coat"
-    Mid6,
-    //% block="bubble jacket"
-    Mid7,
-    //% block="tank top"
-    Mid8,
-    //% block="hawaiian shirt"
-    Mid9,
+    //% block="leather jacket"
+    Mid6
+
 
 
 }
 
 enum LowerWear {
     //% block="dark jeans"
-    Lower0,
-    //% block="light jeans"
     Lower1,
-    //% block="baggy pants"
+    //% block="light jeans"
     Lower2,
-    //% block="black shorts"
+    //% block="baggy pants"
     Lower3,
-    //% block="cargo pants"
-    Lower4,
-    //% block="hip-hop pants"
-    Lower5,
     //% block="cowboy jeans"
-    Lower6,
+    Lower4,
     //% block="astronaut pants"
-    Lower7,
-    //% block="leather pants"
-    Lower8,
-    //% block="khakis"
-    Lower9
+    Lower5,
+    //% block="hip-hop pants"
+    Lower6
 
 
 }
@@ -176,27 +153,30 @@ enum Keys {
     Ti
 }
 enum Instruments {
-    //% blockIdentity="blocks.custom" enumval=0 block="Synth"
+    //% blockIdentity="blocks.custom" enumval=0 block="synth"
     //% jres alias=Synth
     Synth,
-    //% blockIdentity="blocks.custom" enumval=1 block="Xylophone"
+    //% blockIdentity="blocks.custom" enumval=1 block="xylophone"
     //% jres alias=Xylophone
     Xylophone,
-    //% blockIdentity="blocks.custom" enumval=2 block="Guitar"
+    //% blockIdentity="blocks.custom" enumval=2 block="guitar"
     //% jres alias=Guitar
     Guitar,
-    //% blockIdentity="blocks.custom" enumval=3 block="Flute"
+    //% blockIdentity="blocks.custom" enumval=3 block="flute"
     //% jres alias=Flute
     Flute,
-    //% blockIdentity="blocks.custom" enumval=5 block="Bells"
+    //% blockIdentity="blocks.custom" enumval=5 block="bells"
     //% jres alias=Bells
     Bells,
-    //% blockIdentity="blocks.custom" enumval=6 block="Bass"
+    //% blockIdentity="blocks.custom" enumval=6 block="bass"
     //% jres alias=Bass
     Bass,
-    //% blockIdentity="blocks.custom" enumval=7 block="Piano"
+    //% blockIdentity="blocks.custom" enumval=7 block="piano"
     //% jres alias=Piano
-    Piano
+    Piano,
+    //% blockIdentity="blocks.custom" enumval=8 block="villager"
+    //% jres alias=Villager
+    Villager
 }
 
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
@@ -217,25 +197,36 @@ namespace hoc2024 {
     export function instrument(i: Instruments): void {
         switch (i) {
             case Instruments.Synth:
-                player.say("Synth")
+                player.execute("scoreboard players set synth song.inst 0")
+                player.execute("scoreboard players set synth song.inst 1")
                 break;
             case Instruments.Xylophone:
-                player.say("Xylophone")
+                player.execute("scoreboard players set xylophone song.inst 0")
+                player.execute("scoreboard players set xylophone song.inst 1")
                 break;
             case Instruments.Guitar:
-                player.say("Guitar")
+                player.execute("scoreboard players set guitar song.inst 0")
+                player.execute("scoreboard players set guitar song.inst 1")
                 break;
             case Instruments.Flute:
-                player.say("Flute")
+                player.execute("scoreboard players set flute song.inst 0")
+                player.execute("scoreboard players set flute song.inst 1")
                 break;
             case Instruments.Bells:
-                player.say("Bells")
+                player.execute("scoreboard players set bells song.inst 0")
+                player.execute("scoreboard players set bells song.inst 1")
                 break;
             case Instruments.Bass:
-                player.say("Bass")
+                player.execute("scoreboard players set bass song.inst 0")
+                player.execute("scoreboard players set bass song.inst 1")
                 break;
             case Instruments.Piano:
-                player.say("Piano")
+                player.execute("scoreboard players set piano song.inst 0")
+                player.execute("scoreboard players set piano song.inst 1")
+                break;
+            case Instruments.Villager:
+                player.execute("scoreboard players set villager song.inst 0")
+                player.execute("scoreboard players set villager song.inst 1")
                 break;
         }
     }
@@ -244,25 +235,32 @@ namespace hoc2024 {
     export function key(k: Keys): void {
         switch (k) {
             case Keys.Do:
-                player.say("do")
+                player.execute("scoreboard players reset * song.key")
+                player.execute("scoreboard players set do song.key 1")
                 break;
             case Keys.Re:
-                player.say("re")
+                player.execute("scoreboard players reset * song.key")
+                player.execute("scoreboard players set re song.key 1")
                 break;
             case Keys.Mi:
-                player.say("mi")
+                player.execute("scoreboard players reset * song.key")
+                player.execute("scoreboard players set mi song.key 1")
                 break;
             case Keys.Fa:
-                player.say("fa")
+                player.execute("scoreboard players reset * song.key")
+                player.execute("scoreboard players set fa song.key 1")
                 break;
             case Keys.So:
-                player.say("so")
+                player.execute("scoreboard players reset * song.key")
+                player.execute("scoreboard players set so song.key 1")
                 break;
             case Keys.La:
-                player.say("la")
+                player.execute("scoreboard players reset * song.key")
+                player.execute("scoreboard players set la song.key 1")
                 break;
             case Keys.Ti:
-                player.say("ti")
+                player.execute("scoreboard players reset * song.key")
+                player.execute("scoreboard players set ti song.key 1")
                 break;
 
         }
@@ -272,13 +270,16 @@ namespace hoc2024 {
     export function drums(d: Drums): void {
         switch (d) {
             case Drums.Slow:
-                player.say("drums slow")
+                player.execute("scoreboard players reset * song.drums")
+                player.execute("scoreboard players set slow song.drums 1")
                 break;
             case Drums.Medium:
-                player.say("drums medium")
+                player.execute("scoreboard players reset * song.drums")
+                player.execute("scoreboard players set medium song.drums 1")
                 break;
             case Drums.Fast:
-                player.say("drums fast")
+                player.execute("scoreboard players reset * song.drums")
+                player.execute("scoreboard players set fast song.drums 1")
                 break;
         }
     }
@@ -290,41 +291,41 @@ namespace hoc2024 {
         switch (d) {
             case Dances.Move1:
                 player.say("Dance Move 1")
+                player.execute("scoreboard players set move dance.var 1")
                 break;
             case Dances.Move2:
-                player.say("Dance Move 2")
+                player.execute("scoreboard players set move dance.var 2")
                 break;
             case Dances.Move3:
-                player.say("Dance Move 3")
+                player.execute("scoreboard players set move dance.var 3")
                 break;
             case Dances.Move4:
-                player.say("Dance Move 4")
+                player.execute("scoreboard players set move dance.var 4")
                 break;
             case Dances.Move5:
-                player.say("Dance Move 5")
+                player.execute("scoreboard players set move dance.var 5")
                 break;
             case Dances.Move6:
-                player.say("Dance Move 6")
+                player.execute("scoreboard players set move dance.var 6")
                 break;
             case Dances.Move7:
-                player.say("Dance Move 7")
+                player.execute("scoreboard players set move dance.var 7")
                 break;
             case Dances.Move8:
-                player.say("Dance Move 8")
+                player.execute("scoreboard players set move dance.var 8")
                 break;
             case Dances.Move9:
-                player.say("Dance Move 9")
+                player.execute("scoreboard players set move dance.var 9")
                 break;
             case Dances.Move10:
-                player.say("Dance Move 10")
+                player.execute("scoreboard players set move dance.var 10")
                 break;
             case Dances.Move11:
-                player.say("Dance Move 11")
+                player.execute("scoreboard players set move dance.var 11")
                 break;
             case Dances.Move12:
-                player.say("Dance Move 12")
+                player.execute("scoreboard players set move dance.var 12")
                 break;
-
         }
     }
 // END DANCE ACTIVITY
@@ -335,106 +336,67 @@ namespace hoc2024 {
     export function costume(u: HeadWear, m: MidWear, l: LowerWear): void {
         let costume_encoded
         switch (u) {
-            case HeadWear.Head0:
-                costume_encoded = "0"
-                break;
             case HeadWear.Head1:
-                costume_encoded = "1"
+                player.execute("scoreboard players set upper costume.var 1")
                 break;
             case HeadWear.Head2:
-                costume_encoded = "2"
+                player.execute("scoreboard players set upper costume.var 2")
                 break;
             case HeadWear.Head3:
-                costume_encoded = "3"
+                player.execute("scoreboard players set upper costume.var 3")
                 break;
             case HeadWear.Head4:
-                costume_encoded = "4"
+                player.execute("scoreboard players set upper costume.var 4")
                 break;
             case HeadWear.Head5:
-                costume_encoded = "5"
+                player.execute("scoreboard players set upper costume.var 5")
                 break;
             case HeadWear.Head6:
-                costume_encoded = "6"
-                break;
-            case HeadWear.Head7:
-                costume_encoded = "7"
-                break;
-            case HeadWear.Head8:
-                costume_encoded = "8"
-                break;
-            case HeadWear.Head9:
-                costume_encoded = "9"
+                player.execute("scoreboard players set upper costume.var 6")
                 break;
         }
         switch (m) {
-            case MidWear.Mid0:
-                costume_encoded = costume_encoded.concat("0")
-                break;
             case MidWear.Mid1:
-                costume_encoded = costume_encoded.concat("1")
+                player.execute("scoreboard players set middle costume.var 1")
                 break;
             case MidWear.Mid2:
-                costume_encoded = costume_encoded.concat("2")
+                player.execute("scoreboard players set middle costume.var 2")
                 break;
             case MidWear.Mid3:
-                costume_encoded = costume_encoded.concat("3")
+                player.execute("scoreboard players set middle costume.var 3")
                 break;
             case MidWear.Mid4:
-                costume_encoded = costume_encoded.concat("4")
+                player.execute("scoreboard players set middle costume.var 4")
                 break;
             case MidWear.Mid5:
-                costume_encoded = costume_encoded.concat("5")
+                player.execute("scoreboard players set middle costume.var 5")
                 break;
             case MidWear.Mid6:
-                costume_encoded = costume_encoded.concat("6")
-                break;
-            case MidWear.Mid7:
-                costume_encoded = costume_encoded.concat("7")
-                break;
-            case MidWear.Mid8:
-                costume_encoded = costume_encoded.concat("8")
-                break;
-            case MidWear.Mid9:
-                costume_encoded = costume_encoded.concat("9")
+                player.execute("scoreboard players set middle costume.var 6")
                 break;
 
         }
         switch (l) {
-            case LowerWear.Lower0:
-                costume_encoded = costume_encoded.concat("0")
-                break;
             case LowerWear.Lower1:
-                costume_encoded = costume_encoded.concat("1")
+                player.execute("scoreboard players set lower costume.var 1")
                 break;
             case LowerWear.Lower2:
-                costume_encoded = costume_encoded.concat("2")
+                player.execute("scoreboard players set lower costume.var 2")
                 break;
             case LowerWear.Lower3:
-                costume_encoded = costume_encoded.concat("3")
+                player.execute("scoreboard players set lower costume.var 3")
                 break;
             case LowerWear.Lower4:
-                costume_encoded = costume_encoded.concat("4")
+                player.execute("scoreboard players set lower costume.var 4")
                 break;
             case LowerWear.Lower5:
-                costume_encoded = costume_encoded.concat("5")
+                player.execute("scoreboard players set lower costume.var 5")
                 break;
             case LowerWear.Lower6:
-                costume_encoded = costume_encoded.concat("6")
-                break;
-            case LowerWear.Lower7:
-                costume_encoded = costume_encoded.concat("7")
-                break;
-            case LowerWear.Lower8:
-                costume_encoded = costume_encoded.concat("8")
-                break;
-            case LowerWear.Lower9:
-                costume_encoded = costume_encoded.concat("9")
+                player.execute("scoreboard players set lower costume.var 6")
                 break;
 
         }
-        let player_say = "costume "
-        player_say = player_say.concat(costume_encoded)
-        player.say(player_say)
     }
 // END COSTUME ACTIVITY
 
@@ -443,68 +405,65 @@ namespace hoc2024 {
     export function seta(b: Biome, t: Time, w: WeatherA): void {
         let set_encode
         switch (b) {
-            case Biome.Biome0:
-                set_encode = "0"
-                break;
             case Biome.Biome1:
-                set_encode = "1"
+                player.execute("scoreboard players set biome set.var 1")
                 break;
             case Biome.Biome2:
-                set_encode = "2"
+                player.execute("scoreboard players set biome set.var 2")
                 break;
             case Biome.Biome3:
-                set_encode = "3"
+                player.execute("scoreboard players set biome set.var 3")
                 break;
             case Biome.Biome4:
-                set_encode = "4"
+                player.execute("scoreboard players set biome set.var 4")
                 break;
             case Biome.Biome5:
-                set_encode = "5"
+                player.execute("scoreboard players set biome set.var 5")
                 break;
             case Biome.Biome6:
-                set_encode = "6"
+                player.execute("scoreboard players set biome set.var 6")
                 break;
             case Biome.Biome7:
-                set_encode = "7"
+                player.execute("scoreboard players set biome set.var 7")
                 break;
             case Biome.Biome8:
-                set_encode = "8"
+                player.execute("scoreboard players set biome set.var 8")
+                break;
+            case Biome.Biome9:
+                player.execute("scoreboard players set biome set.var 9")
+                break;
+            case Biome.Biome10:
+                player.execute("scoreboard players set biome set.var 10")
                 break;
         }
         switch (t) {
-            case Time.Time0:
-                set_encode = set_encode.concat("0")
-                break;
             case Time.Time1:
-                set_encode = set_encode.concat("1")
+                player.execute("scoreboard players set time set.var 1")
                 break;
             case Time.Time2:
-                set_encode = set_encode.concat("2")
+                player.execute("scoreboard players set time set.var 2")
                 break;
             case Time.Time3:
-                set_encode = set_encode.concat("3")
+                player.execute("scoreboard players set time set.var 3")
+                break;
+            case Time.Time4:
+                player.execute("scoreboard players set time set.var 4")
                 break;
         }
         switch (w) {
-            case WeatherA.Weather0:
-                set_encode = set_encode.concat("0")
-                break;
             case WeatherA.Weather1:
-                set_encode = set_encode.concat("1")
+                player.execute("scoreboard players set weather set.var 1")
                 break;
             case WeatherA.Weather2:
-                set_encode = set_encode.concat("2")
+                player.execute("scoreboard players set weather set.var 2")
                 break;
             case WeatherA.Weather3:
-                set_encode = set_encode.concat("3")
+                player.execute("scoreboard players set weather set.var 3")
                 break;
             case WeatherA.Weather4:
-                set_encode = set_encode.concat("4")
+                player.execute("scoreboard players set weather set.var 4")
                 break;
         }
-        let player_say = "set "
-        player_say = player_say.concat(set_encode)
-        player.say(player_say)
     }
 // END SET DESIGN ACTIVITY
 }
