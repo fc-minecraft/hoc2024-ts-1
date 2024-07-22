@@ -197,36 +197,36 @@ namespace hoc2024 {
     export function instrument(i: Instruments): void {
         switch (i) {
             case Instruments.Synth:
-                player.execute("scoreboard players set synth song.inst 0")
-                player.execute("scoreboard players set synth song.inst 1")
+                player.execute("scoreboard players set synth song.inst 00")
+                player.execute("scoreboard players set synth song.inst 01")
                 break;
             case Instruments.Xylophone:
-                player.execute("scoreboard players set xylophone song.inst 0")
-                player.execute("scoreboard players set xylophone song.inst 1")
+                player.execute("scoreboard players set xylophone song.inst 00")
+                player.execute("scoreboard players set xylophone song.inst 01")
                 break;
             case Instruments.Guitar:
-                player.execute("scoreboard players set guitar song.inst 0")
-                player.execute("scoreboard players set guitar song.inst 1")
+                player.execute("scoreboard players set guitar song.inst 00")
+                player.execute("scoreboard players set guitar song.inst 01")
                 break;
             case Instruments.Flute:
-                player.execute("scoreboard players set flute song.inst 0")
-                player.execute("scoreboard players set flute song.inst 1")
+                player.execute("scoreboard players set flute song.inst 00")
+                player.execute("scoreboard players set flute song.inst 01")
                 break;
             case Instruments.Bells:
-                player.execute("scoreboard players set bells song.inst 0")
-                player.execute("scoreboard players set bells song.inst 1")
+                player.execute("scoreboard players set bells song.inst 00")
+                player.execute("scoreboard players set bells song.inst 01")
                 break;
             case Instruments.Bass:
-                player.execute("scoreboard players set bass song.inst 0")
-                player.execute("scoreboard players set bass song.inst 1")
+                player.execute("scoreboard players set bass song.inst 00")
+                player.execute("scoreboard players set bass song.inst 01")
                 break;
             case Instruments.Piano:
-                player.execute("scoreboard players set piano song.inst 0")
-                player.execute("scoreboard players set piano song.inst 1")
+                player.execute("scoreboard players set piano song.inst 00")
+                player.execute("scoreboard players set piano song.inst 01")
                 break;
             case Instruments.Villager:
-                player.execute("scoreboard players set villager song.inst 0")
-                player.execute("scoreboard players set villager song.inst 1")
+                player.execute("scoreboard players set villager song.inst 00")
+                player.execute("scoreboard players set villager song.inst 01")
                 break;
         }
     }
@@ -236,31 +236,31 @@ namespace hoc2024 {
         switch (k) {
             case Keys.Do:
                 player.execute("scoreboard players reset * song.key")
-                player.execute("scoreboard players set do song.key 1")
+                player.execute("scoreboard players set do song.key 01")
                 break;
             case Keys.Re:
                 player.execute("scoreboard players reset * song.key")
-                player.execute("scoreboard players set re song.key 1")
+                player.execute("scoreboard players set re song.key 01")
                 break;
             case Keys.Mi:
                 player.execute("scoreboard players reset * song.key")
-                player.execute("scoreboard players set mi song.key 1")
+                player.execute("scoreboard players set mi song.key 01")
                 break;
             case Keys.Fa:
                 player.execute("scoreboard players reset * song.key")
-                player.execute("scoreboard players set fa song.key 1")
+                player.execute("scoreboard players set fa song.key 01")
                 break;
             case Keys.So:
                 player.execute("scoreboard players reset * song.key")
-                player.execute("scoreboard players set so song.key 1")
+                player.execute("scoreboard players set so song.key 01")
                 break;
             case Keys.La:
                 player.execute("scoreboard players reset * song.key")
-                player.execute("scoreboard players set la song.key 1")
+                player.execute("scoreboard players set la song.key 01")
                 break;
             case Keys.Ti:
                 player.execute("scoreboard players reset * song.key")
-                player.execute("scoreboard players set ti song.key 1")
+                player.execute("scoreboard players set ti song.key 01")
                 break;
 
         }
@@ -271,15 +271,15 @@ namespace hoc2024 {
         switch (d) {
             case Drums.Slow:
                 player.execute("scoreboard players reset * song.drums")
-                player.execute("scoreboard players set slow song.drums 1")
+                player.execute("scoreboard players set slow song.drums 01")
                 break;
             case Drums.Medium:
                 player.execute("scoreboard players reset * song.drums")
-                player.execute("scoreboard players set medium song.drums 1")
+                player.execute("scoreboard players set medium song.drums 01")
                 break;
             case Drums.Fast:
                 player.execute("scoreboard players reset * song.drums")
-                player.execute("scoreboard players set fast song.drums 1")
+                player.execute("scoreboard players set fast song.drums 01")
                 break;
         }
     }
@@ -291,31 +291,31 @@ namespace hoc2024 {
         switch (d) {
             case Dances.Move1:
                 player.say("Dance Move 1")
-                player.execute("scoreboard players set move dance.var 1")
+                player.execute("scoreboard players set move dance.var 01")
                 break;
             case Dances.Move2:
-                player.execute("scoreboard players set move dance.var 2")
+                player.execute("scoreboard players set move dance.var 02")
                 break;
             case Dances.Move3:
-                player.execute("scoreboard players set move dance.var 3")
+                player.execute("scoreboard players set move dance.var 03")
                 break;
             case Dances.Move4:
-                player.execute("scoreboard players set move dance.var 4")
+                player.execute("scoreboard players set move dance.var 04")
                 break;
             case Dances.Move5:
-                player.execute("scoreboard players set move dance.var 5")
+                player.execute("scoreboard players set move dance.var 05")
                 break;
             case Dances.Move6:
-                player.execute("scoreboard players set move dance.var 6")
+                player.execute("scoreboard players set move dance.var 06")
                 break;
             case Dances.Move7:
-                player.execute("scoreboard players set move dance.var 7")
+                player.execute("scoreboard players set move dance.var 07")
                 break;
             case Dances.Move8:
-                player.execute("scoreboard players set move dance.var 8")
+                player.execute("scoreboard players set move dance.var 08")
                 break;
             case Dances.Move9:
-                player.execute("scoreboard players set move dance.var 9")
+                player.execute("scoreboard players set move dance.var 09")
                 break;
             case Dances.Move10:
                 player.execute("scoreboard players set move dance.var 10")
@@ -337,63 +337,63 @@ namespace hoc2024 {
         let costume_encoded
         switch (u) {
             case HeadWear.Head1:
-                player.execute("scoreboard players set upper costume.var 1")
+                player.execute("scoreboard players set upper costume.var 01")
                 break;
             case HeadWear.Head2:
-                player.execute("scoreboard players set upper costume.var 2")
+                player.execute("scoreboard players set upper costume.var 02")
                 break;
             case HeadWear.Head3:
-                player.execute("scoreboard players set upper costume.var 3")
+                player.execute("scoreboard players set upper costume.var 03")
                 break;
             case HeadWear.Head4:
-                player.execute("scoreboard players set upper costume.var 4")
+                player.execute("scoreboard players set upper costume.var 04")
                 break;
             case HeadWear.Head5:
-                player.execute("scoreboard players set upper costume.var 5")
+                player.execute("scoreboard players set upper costume.var 05")
                 break;
             case HeadWear.Head6:
-                player.execute("scoreboard players set upper costume.var 6")
+                player.execute("scoreboard players set upper costume.var 06")
                 break;
         }
         switch (m) {
             case MidWear.Mid1:
-                player.execute("scoreboard players set middle costume.var 1")
+                player.execute("scoreboard players set middle costume.var 01")
                 break;
             case MidWear.Mid2:
-                player.execute("scoreboard players set middle costume.var 2")
+                player.execute("scoreboard players set middle costume.var 02")
                 break;
             case MidWear.Mid3:
-                player.execute("scoreboard players set middle costume.var 3")
+                player.execute("scoreboard players set middle costume.var 03")
                 break;
             case MidWear.Mid4:
-                player.execute("scoreboard players set middle costume.var 4")
+                player.execute("scoreboard players set middle costume.var 04")
                 break;
             case MidWear.Mid5:
-                player.execute("scoreboard players set middle costume.var 5")
+                player.execute("scoreboard players set middle costume.var 05")
                 break;
             case MidWear.Mid6:
-                player.execute("scoreboard players set middle costume.var 6")
+                player.execute("scoreboard players set middle costume.var 06")
                 break;
 
         }
         switch (l) {
             case LowerWear.Lower1:
-                player.execute("scoreboard players set lower costume.var 1")
+                player.execute("scoreboard players set lower costume.var 01")
                 break;
             case LowerWear.Lower2:
-                player.execute("scoreboard players set lower costume.var 2")
+                player.execute("scoreboard players set lower costume.var 02")
                 break;
             case LowerWear.Lower3:
-                player.execute("scoreboard players set lower costume.var 3")
+                player.execute("scoreboard players set lower costume.var 03")
                 break;
             case LowerWear.Lower4:
-                player.execute("scoreboard players set lower costume.var 4")
+                player.execute("scoreboard players set lower costume.var 04")
                 break;
             case LowerWear.Lower5:
-                player.execute("scoreboard players set lower costume.var 5")
+                player.execute("scoreboard players set lower costume.var 05")
                 break;
             case LowerWear.Lower6:
-                player.execute("scoreboard players set lower costume.var 6")
+                player.execute("scoreboard players set lower costume.var 06")
                 break;
 
         }
@@ -406,31 +406,31 @@ namespace hoc2024 {
         let set_encode
         switch (b) {
             case Biome.Biome1:
-                player.execute("scoreboard players set biome set.var 1")
+                player.execute("scoreboard players set biome set.var 01")
                 break;
             case Biome.Biome2:
-                player.execute("scoreboard players set biome set.var 2")
+                player.execute("scoreboard players set biome set.var 02")
                 break;
             case Biome.Biome3:
-                player.execute("scoreboard players set biome set.var 3")
+                player.execute("scoreboard players set biome set.var 03")
                 break;
             case Biome.Biome4:
-                player.execute("scoreboard players set biome set.var 4")
+                player.execute("scoreboard players set biome set.var 04")
                 break;
             case Biome.Biome5:
-                player.execute("scoreboard players set biome set.var 5")
+                player.execute("scoreboard players set biome set.var 05")
                 break;
             case Biome.Biome6:
-                player.execute("scoreboard players set biome set.var 6")
+                player.execute("scoreboard players set biome set.var 06")
                 break;
             case Biome.Biome7:
-                player.execute("scoreboard players set biome set.var 7")
+                player.execute("scoreboard players set biome set.var 07")
                 break;
             case Biome.Biome8:
-                player.execute("scoreboard players set biome set.var 8")
+                player.execute("scoreboard players set biome set.var 08")
                 break;
             case Biome.Biome9:
-                player.execute("scoreboard players set biome set.var 9")
+                player.execute("scoreboard players set biome set.var 09")
                 break;
             case Biome.Biome10:
                 player.execute("scoreboard players set biome set.var 10")
@@ -438,30 +438,30 @@ namespace hoc2024 {
         }
         switch (t) {
             case Time.Time1:
-                player.execute("scoreboard players set time set.var 1")
+                player.execute("scoreboard players set time set.var 01")
                 break;
             case Time.Time2:
-                player.execute("scoreboard players set time set.var 2")
+                player.execute("scoreboard players set time set.var 02")
                 break;
             case Time.Time3:
-                player.execute("scoreboard players set time set.var 3")
+                player.execute("scoreboard players set time set.var 03")
                 break;
             case Time.Time4:
-                player.execute("scoreboard players set time set.var 4")
+                player.execute("scoreboard players set time set.var 04")
                 break;
         }
         switch (w) {
             case WeatherA.Weather1:
-                player.execute("scoreboard players set weather set.var 1")
+                player.execute("scoreboard players set weather set.var 01")
                 break;
             case WeatherA.Weather2:
-                player.execute("scoreboard players set weather set.var 2")
+                player.execute("scoreboard players set weather set.var 02")
                 break;
             case WeatherA.Weather3:
-                player.execute("scoreboard players set weather set.var 3")
+                player.execute("scoreboard players set weather set.var 03")
                 break;
             case WeatherA.Weather4:
-                player.execute("scoreboard players set weather set.var 4")
+                player.execute("scoreboard players set weather set.var 04")
                 break;
         }
     }
