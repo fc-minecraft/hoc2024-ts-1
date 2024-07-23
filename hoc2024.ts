@@ -290,7 +290,6 @@ namespace hoc2024 {
     export function dances(d: Dances): void {
         switch (d) {
             case Dances.Move1:
-                player.say("Dance Move 1")
                 player.execute("scoreboard players set move dance.var 01")
                 break;
             case Dances.Move2:
