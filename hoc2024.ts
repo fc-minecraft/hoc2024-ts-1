@@ -197,35 +197,35 @@ namespace hoc2024 {
     export function instrument(i: Instruments): void {
         switch (i) {
             case Instruments.Synth:
-                player.execute("scoreboard players set synth song.inst 00")
+                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set synth song.inst 01")
                 break;
             case Instruments.Xylophone:
-                player.execute("scoreboard players set xylophone song.inst 00")
+                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set xylophone song.inst 01")
                 break;
             case Instruments.Guitar:
-                player.execute("scoreboard players set guitar song.inst 00")
+                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set guitar song.inst 01")
                 break;
             case Instruments.Flute:
-                player.execute("scoreboard players set flute song.inst 00")
+                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set flute song.inst 01")
                 break;
             case Instruments.Bells:
-                player.execute("scoreboard players set bells song.inst 00")
+                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set bells song.inst 01")
                 break;
             case Instruments.Bass:
-                player.execute("scoreboard players set bass song.inst 00")
+                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set bass song.inst 01")
                 break;
             case Instruments.Piano:
-                player.execute("scoreboard players set piano song.inst 00")
+                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set piano song.inst 01")
                 break;
             case Instruments.Villager:
-                player.execute("scoreboard players set villager song.inst 00")
+                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set villager song.inst 01")
                 break;
         }
