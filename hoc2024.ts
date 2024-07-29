@@ -231,7 +231,7 @@ namespace hoc2024 {
         }
     }
 
-    //% block="key %k"
+    //% block="note %k"
     export function key(k: Keys): void {
         switch (k) {
             case Keys.Do:
