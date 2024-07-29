@@ -331,7 +331,7 @@ namespace hoc2024 {
 
 // COSTUME ACTIVITY
 
-    //% block="upper %u middle %m lower %l"
+    //% block="head %u body %m legs %l"
     export function costume(u: HeadWear, m: MidWear, l: LowerWear): void {
         let costume_encoded
         switch (u) {
