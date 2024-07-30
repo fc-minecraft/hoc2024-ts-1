@@ -128,6 +128,8 @@ enum Dances {
 }
 
 enum Drums {
+    //% block="none"
+    None,    
     //% block="slow"
     Slow,
     //% block="medium"
@@ -269,6 +271,9 @@ namespace hoc2024 {
     //% block="drums %s"
     export function drums(d: Drums): void {
         switch (d) {
+            case Drums.None:
+                player.execute("scoreboard players reset * song.drums")
+                break;
             case Drums.Slow:
                 player.execute("scoreboard players reset * song.drums")
                 player.execute("scoreboard players set slow song.drums 01")
