@@ -181,6 +181,9 @@ enum Instruments {
     Villager
 }
 
+//GLOBAL VARIABLES
+const communicationsTimeout = 100;
+
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2024 {
 
@@ -231,6 +234,7 @@ namespace hoc2024 {
                 player.execute("scoreboard players set villager song.inst 01")
                 break;
         }
+        loops.pause(communicationsTimeout)
     }
 
     //% block="note %k"
@@ -266,6 +270,7 @@ namespace hoc2024 {
                 break;
 
         }
+        loops.pause(communicationsTimeout)
     }
 
     //% block="drums %s"
@@ -287,6 +292,7 @@ namespace hoc2024 {
                 player.execute("scoreboard players set fast song.drums 01")
                 break;
         }
+        loops.pause(communicationsTimeout)
     }
 // END MUSIC ACTIVITY
 
@@ -331,6 +337,7 @@ namespace hoc2024 {
                 player.execute("scoreboard players set move dance.var 12")
                 break;
         }
+        loops.pause(communicationsTimeout)
     }
 // END DANCE ACTIVITY
 
@@ -359,6 +366,8 @@ namespace hoc2024 {
                 player.execute("scoreboard players set upper costume.var 06")
                 break;
         }
+        loops.pause(communicationsTimeout)
+
         switch (m) {
             case MidWear.Mid1:
                 player.execute("scoreboard players set middle costume.var 01")
@@ -378,8 +387,9 @@ namespace hoc2024 {
             case MidWear.Mid6:
                 player.execute("scoreboard players set middle costume.var 06")
                 break;
-
         }
+        loops.pause(communicationsTimeout)
+
         switch (l) {
             case LowerWear.Lower1:
                 player.execute("scoreboard players set lower costume.var 01")
@@ -399,8 +409,8 @@ namespace hoc2024 {
             case LowerWear.Lower6:
                 player.execute("scoreboard players set lower costume.var 06")
                 break;
-
         }
+        loops.pause(communicationsTimeout)
     }
 // END COSTUME ACTIVITY
 
@@ -440,6 +450,8 @@ namespace hoc2024 {
                 player.execute("scoreboard players set biome set.var 10")
                 break;
         }
+        loops.pause(communicationsTimeout)
+
         switch (t) {
             case Time.Time1:
                 player.execute("scoreboard players set time set.var 01")
@@ -454,6 +466,8 @@ namespace hoc2024 {
                 player.execute("scoreboard players set time set.var 04")
                 break;
         }
+        loops.pause(communicationsTimeout)
+
         switch (w) {
             case WeatherA.Weather1:
                 player.execute("scoreboard players set weather set.var 01")
@@ -468,6 +482,7 @@ namespace hoc2024 {
                 player.execute("scoreboard players set weather set.var 04")
                 break;
         }
+        loops.pause(communicationsTimeout)
     }
 // END SET DESIGN ACTIVITY
 }
