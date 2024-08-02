@@ -23,6 +23,15 @@ enum Biome {
     Biome10
 }
 
+enum BiomeA {
+    //% block="taiga"
+    Biome2,
+    //% block="desert"
+    Biome3,
+    //% block="jungle"
+    Biome4
+}
+
 enum Time {
     //% block="sunrise"
     Time1,
@@ -35,7 +44,17 @@ enum Time {
 
 }
 
-enum WeatherA {
+enum TimeA {
+    //% block="day"
+    Time2,
+    //% block="sunset"
+    Time3,
+    //% block="night"
+    Time4
+
+}
+
+enum WeatherS {
     //% block="clear"
     Weather1,
     //% block="snow"
@@ -44,87 +63,114 @@ enum WeatherA {
     Weather3,
     //% block="thunderstorm"
     Weather4
+}
 
-
+enum WeatherA {
+    //% block="clear"
+    Weather1,
+    //% block="snow"
+    Weather2,
+    //% block="rain"
+    Weather3
 }
 
 enum HeadWear {
-    //% block="glasses 1"
+    //% block="NEEDS ITEM"
     Head1,
-    //% block="glasses 2"
+    //% block="knight helmet"
     Head2,
-    //% block="sun glasses 1"
+    //% block="NEEDS ITEM"
     Head3,
-    //% block="sun glasses 2"
+    //% block="NEEDS ITEM"
     Head4,
     //% block="cowboy hat"
     Head5,
     //% block="astronaut helmet"
     Head6
-
 }
 
+enum HeadWearA {
+    //% block="knight helmet"
+    Head2,
+    //% block="cowboy hat"
+    Head5,
+    //% block="astronaut helmet"
+    Head6
+}
+
+
 enum MidWear {
-    //% block="white tee"
+    //% block="NEEDS ITEM"
     Mid1,
-    //% block="black tee"
+    //% block="NEEDS ITEM"
     Mid2,
-    //% block="sports jersey"
+    //% block="NEEDS ITEM"
     Mid3,
     //% block="cowboy shirt"
     Mid4,
     //% block="astronaut top"
     Mid5,
-    //% block="leather jacket"
+    //% block="knight shirt"
     Mid6
+}
 
-
-
+enum MidWearA {
+    //% block="cowboy shirt"
+    Mid4,
+    //% block="astronaut top"
+    Mid5,
+    //% block="knight shirt"
+    Mid6
 }
 
 enum LowerWear {
-    //% block="dark jeans"
+    //% block="NEEDS ITEM"
     Lower1,
-    //% block="light jeans"
+    //% block="NEEDS ITEM"
     Lower2,
-    //% block="baggy pants"
+    //% block="knight pants"
     Lower3,
     //% block="cowboy jeans"
     Lower4,
     //% block="astronaut pants"
     Lower5,
-    //% block="hip-hop pants"
+    //% block="NEEDS ITEM"
     Lower6
+}
 
-
+enum LowerWearA {
+    //% block="knight pants"
+    Lower3,
+    //% block="cowboy jeans"
+    Lower4,
+    //% block="astronaut pants"
+    Lower5
 }
 
 enum Dances {
-    //% block="woah"
+    //% block="DANCE 1"
     Move1,
-    //% block="swagg bouncee"
+    //% block="DANCE 2"
     Move2,
-    //% block="kangsta wok"
+    //% block="DANCE 3"
     Move3,
-    //% block="smeeze"
+    //% block="DANCE 4"
     Move4,
-    //% block="bust down"
+    //% block="DANCE 5"
     Move5,
-    //% block="cosby walk"
-    Move6,
-    //% block="mash potato"
-    Move7,
-    //% block="twist"
-    Move8,
-    //% block="locking"
-    Move9,
-    //% block="dougie"
-    Move10,
-    //% block="kick step"
-    Move11,
-    //% block="moonwalk"
-    Move12
+    //% block="DANCE 6"
+    Move6
+}
 
+enum DancesA {
+    //% block="DANCE 1"
+    Move1,
+    //% block="DANCE 3"
+    Move3,
+    //% block="DANCE 4"
+    Move4,
+    //% block="DANCE 6"
+    Move6
 }
 
 enum Drums {
@@ -237,6 +283,39 @@ namespace hoc2024 {
         loops.pause(communicationsTimeout)
     }
 
+    //% block="remove instrument %i"
+    //% i.fieldEditor="gridpicker"
+    //% i.fieldOptions.columns=4
+    export function remove_instrument(i: Instruments): void {
+        switch (i) {
+            case Instruments.Synth:
+                player.say("Removed Synth")
+                break;
+            case Instruments.Xylophone:
+                player.say("Removed Xylophone")
+                break;
+            case Instruments.Guitar:
+                player.say("Removed Guitar")
+                break;
+            case Instruments.Flute:
+                player.say("Removed Flute")
+                break;
+            case Instruments.Bells:
+                player.say("Removed Bells")
+                break;
+            case Instruments.Bass:
+                player.say("Removed Bass")
+                break;
+            case Instruments.Piano:
+                player.say("Removed Piano")
+                break;
+            case Instruments.Villager:
+                player.say("Removed Villager")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+    }
+
     //% block="note %k"
     export function key(k: Keys): void {
         switch (k) {
@@ -297,6 +376,8 @@ namespace hoc2024 {
 // END MUSIC ACTIVITY
 
 // DANCE ACTIVITY
+
+    //SANDBOX
     //% block="dance step %s"
     export function dances(d: Dances): void {
         switch (d) {
@@ -318,23 +399,25 @@ namespace hoc2024 {
             case Dances.Move6:
                 player.execute("scoreboard players set move dance.var 06")
                 break;
-            case Dances.Move7:
-                player.execute("scoreboard players set move dance.var 07")
+        }
+        loops.pause(communicationsTimeout)
+    }
+
+    //ACTIVITY
+    //% block="dance step %s"
+    export function dancea(d: DancesA): void {
+        switch (d) {
+            case DancesA.Move1:
+                player.execute("scoreboard players set move dance.var 01")
                 break;
-            case Dances.Move8:
-                player.execute("scoreboard players set move dance.var 08")
+            case DancesA.Move3:
+                player.execute("scoreboard players set move dance.var 03")
                 break;
-            case Dances.Move9:
-                player.execute("scoreboard players set move dance.var 09")
+            case DancesA.Move4:
+                player.execute("scoreboard players set move dance.var 04")
                 break;
-            case Dances.Move10:
-                player.execute("scoreboard players set move dance.var 10")
-                break;
-            case Dances.Move11:
-                player.execute("scoreboard players set move dance.var 11")
-                break;
-            case Dances.Move12:
-                player.execute("scoreboard players set move dance.var 12")
+            case DancesA.Move6:
+                player.execute("scoreboard players set move dance.var 06")
                 break;
         }
         loops.pause(communicationsTimeout)
@@ -343,9 +426,9 @@ namespace hoc2024 {
 
 // COSTUME ACTIVITY
 
+    //SANDBOX
     //% block="head %u body %m legs %l"
     export function costume(u: HeadWear, m: MidWear, l: LowerWear): void {
-        let costume_encoded
         switch (u) {
             case HeadWear.Head1:
                 player.execute("scoreboard players set upper costume.var 01")
@@ -412,12 +495,56 @@ namespace hoc2024 {
         }
         loops.pause(communicationsTimeout)
     }
+
+    //ACTIVITY
+    //% block="head %u body %m legs %l"
+    export function costumea(u: HeadWearA, m: MidWearA, l: LowerWearA): void {
+        switch (u) {
+            case HeadWearA.Head2:
+                player.execute("scoreboard players set upper costume.var 02")
+                break;
+            case HeadWearA.Head5:
+                player.execute("scoreboard players set upper costume.var 05")
+                break;
+            case HeadWearA.Head6:
+                player.execute("scoreboard players set upper costume.var 06")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+
+        switch (m) {
+            case MidWearA.Mid4:
+                player.execute("scoreboard players set middle costume.var 04")
+                break;
+            case MidWearA.Mid5:
+                player.execute("scoreboard players set middle costume.var 05")
+                break;
+            case MidWearA.Mid6:
+                player.execute("scoreboard players set middle costume.var 06")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+
+        switch (l) {
+            case LowerWearA.Lower3:
+                player.execute("scoreboard players set lower costume.var 03")
+                break;
+            case LowerWearA.Lower4:
+                player.execute("scoreboard players set lower costume.var 04")
+                break;
+            case LowerWearA.Lower5:
+                player.execute("scoreboard players set lower costume.var 05")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+    }
 // END COSTUME ACTIVITY
 
 // SET DESIGN ACTIVITY
+
+    //SANDBOX
     //% block="biome %b time %t weather %w"
-    export function seta(b: Biome, t: Time, w: WeatherA): void {
-        let set_encode
+    export function sets(b: Biome, t: Time, w: WeatherS): void {
         switch (b) {
             case Biome.Biome1:
                 player.execute("scoreboard players set biome set.var 01")
@@ -469,6 +596,52 @@ namespace hoc2024 {
         loops.pause(communicationsTimeout)
 
         switch (w) {
+            case WeatherS.Weather1:
+                player.execute("scoreboard players set weather set.var 01")
+                break;
+            case WeatherS.Weather2:
+                player.execute("scoreboard players set weather set.var 02")
+                break;
+            case WeatherS.Weather3:
+                player.execute("scoreboard players set weather set.var 03")
+                break;
+            case WeatherS.Weather4:
+                player.execute("scoreboard players set weather set.var 04")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+    }
+
+    //ACTIVITY
+    //% block="biome %b time %t weather %w"
+    export function seta(b: BiomeA, t: TimeA, w: WeatherA): void {
+        switch (b) {
+            case BiomeA.Biome2:
+                player.execute("scoreboard players set biome set.var 02")
+                break;
+            case BiomeA.Biome3:
+                player.execute("scoreboard players set biome set.var 03")
+                break;
+            case BiomeA.Biome4:
+                player.execute("scoreboard players set biome set.var 04")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+
+        switch (t) {
+            case TimeA.Time2:
+                player.execute("scoreboard players set time set.var 02")
+                break;
+            case TimeA.Time3:
+                player.execute("scoreboard players set time set.var 03")
+                break;
+            case TimeA.Time4:
+                player.execute("scoreboard players set time set.var 04")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+
+        switch (w) {
             case WeatherA.Weather1:
                 player.execute("scoreboard players set weather set.var 01")
                 break;
@@ -477,9 +650,6 @@ namespace hoc2024 {
                 break;
             case WeatherA.Weather3:
                 player.execute("scoreboard players set weather set.var 03")
-                break;
-            case WeatherA.Weather4:
-                player.execute("scoreboard players set weather set.var 04")
                 break;
         }
         loops.pause(communicationsTimeout)
