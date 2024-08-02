@@ -242,41 +242,33 @@ namespace hoc2024 {
 
 
 // MUSIC ACTIVITY
-    //% block="instrument %i"
+    //% block="add instrument %i"
     //% i.fieldEditor="gridpicker"
     //% i.fieldOptions.columns=4
     export function instrument(i: Instruments): void {
         switch (i) {
             case Instruments.Synth:
-                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set synth song.inst 01")
                 break;
             case Instruments.Xylophone:
-                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set xylophone song.inst 01")
                 break;
             case Instruments.Guitar:
-                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set guitar song.inst 01")
                 break;
             case Instruments.Flute:
-                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set flute song.inst 01")
                 break;
             case Instruments.Bells:
-                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set bells song.inst 01")
                 break;
             case Instruments.Bass:
-                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set bass song.inst 01")
                 break;
             case Instruments.Piano:
-                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set piano song.inst 01")
                 break;
             case Instruments.Villager:
-                player.execute("scoreboard players reset * song.inst")
                 player.execute("scoreboard players set villager song.inst 01")
                 break;
         }
@@ -289,28 +281,28 @@ namespace hoc2024 {
     export function remove_instrument(i: Instruments): void {
         switch (i) {
             case Instruments.Synth:
-                player.say("Removed Synth")
+                player.execute("scoreboard players set synth song.inst 00")
                 break;
             case Instruments.Xylophone:
-                player.say("Removed Xylophone")
+                player.execute("scoreboard players set xylophone song.inst 00")
                 break;
             case Instruments.Guitar:
-                player.say("Removed Guitar")
+                player.execute("scoreboard players set guitar song.inst 00")
                 break;
             case Instruments.Flute:
-                player.say("Removed Flute")
+                player.execute("scoreboard players set flute song.inst 00")
                 break;
             case Instruments.Bells:
-                player.say("Removed Bells")
+                player.execute("scoreboard players set bells song.inst 00")
                 break;
             case Instruments.Bass:
-                player.say("Removed Bass")
+                player.execute("scoreboard players set bass song.inst 00")
                 break;
             case Instruments.Piano:
-                player.say("Removed Piano")
+                player.execute("scoreboard players set piano song.inst 00")
                 break;
             case Instruments.Villager:
-                player.say("Removed Villager")
+                player.execute("scoreboard players set villager song.inst 00")
                 break;
         }
         loops.pause(communicationsTimeout)
