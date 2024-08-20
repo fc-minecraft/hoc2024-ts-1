@@ -431,7 +431,7 @@ namespace hoc2024 {
      *
      * @param name is which dance should be performed. 
      */
-    export function dances(d: Dances): void {
+    export function dances(d: Dances) {
         switch (d) {
             case Dances.Move1:
                 player.execute("scoreboard players set move dance.var 01")
