@@ -147,7 +147,7 @@ enum LowerWearA {
     Lower5
 }
 
-enum Dances {
+enum Dances_makecode {
     //% block="DANCE 1"
     Move1,
     //% block="DANCE 2"
@@ -162,7 +162,7 @@ enum Dances {
     Move6
 }
 
-enum DancesA {
+enum DancesA_makecode {
     //% block="DANCE 1"
     Move1,
     //% block="DANCE 3"
@@ -170,6 +170,15 @@ enum DancesA {
     //% block="DANCE 4"
     Move4,
     //% block="DANCE 6"
+    Move6
+}
+
+enum Dances {
+    Move1,
+    Move2,
+    Move3,
+    Move4,
+    Move5,
     Move6
 }
 
@@ -371,24 +380,24 @@ namespace hoc2024 {
 
     //SANDBOX
     //% block="dance step %s"
-    export function dances(d: Dances): void {
+    export function _dances_makecode(d: Dances_makecode): void {
         switch (d) {
-            case Dances.Move1:
+            case Dances_makecode.Move1:
                 player.execute("scoreboard players set move dance.var 01")
                 break;
-            case Dances.Move2:
+            case Dances_makecode.Move2:
                 player.execute("scoreboard players set move dance.var 02")
                 break;
-            case Dances.Move3:
+            case Dances_makecode.Move3:
                 player.execute("scoreboard players set move dance.var 03")
                 break;
-            case Dances.Move4:
+            case Dances_makecode.Move4:
                 player.execute("scoreboard players set move dance.var 04")
                 break;
-            case Dances.Move5:
+            case Dances_makecode.Move5:
                 player.execute("scoreboard players set move dance.var 05")
                 break;
-            case Dances.Move6:
+            case Dances_makecode.Move6:
                 player.execute("scoreboard players set move dance.var 06")
                 break;
         }
@@ -397,19 +406,56 @@ namespace hoc2024 {
 
     //ACTIVITY
     //% block="dance step %s"
-    export function dancea(d: DancesA): void {
+    export function _dancea_makecode(d: DancesA_makecode): void {
         switch (d) {
-            case DancesA.Move1:
+            case DancesA_makecode.Move1:
                 player.execute("scoreboard players set move dance.var 01")
                 break;
-            case DancesA.Move3:
+            case DancesA_makecode.Move3:
                 player.execute("scoreboard players set move dance.var 03")
                 break;
-            case DancesA.Move4:
+            case DancesA_makecode.Move4:
                 player.execute("scoreboard players set move dance.var 04")
                 break;
-            case DancesA.Move6:
+            case DancesA_makecode.Move6:
                 player.execute("scoreboard players set move dance.var 06")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+    }
+
+    //PYTHON
+    /**
+     * This function instructs which dance should be done.
+     * Valid Dances.Move1, Dances.Move2, etc all the way to Dances.Move6
+     *
+     * @param name is which dance should be performed. 
+     */
+    export function dances(d: Dances): void {
+        switch (d) {
+            case Dances.Move1:
+                player.execute("scoreboard players set move dance.var 01")
+                player.say("MOVE 1")
+                break;
+            case Dances.Move2:
+                player.execute("scoreboard players set move dance.var 02")
+                player.say("MOVE 2")
+                break;
+            case Dances.Move3:
+                player.execute("scoreboard players set move dance.var 03")
+                player.say("MOVE 3")
+                break;
+            case Dances.Move4:
+                player.execute("scoreboard players set move dance.var 04")
+                player.say("MOVE 4")
+                break;
+            case Dances.Move5:
+                player.execute("scoreboard players set move dance.var 05")
+                player.say("MOVE 5")
+                break;
+            case Dances.Move6:
+                player.execute("scoreboard players set move dance.var 06")
+                player.say("MOVE 6")
                 break;
         }
         loops.pause(communicationsTimeout)
