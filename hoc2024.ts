@@ -147,7 +147,6 @@ enum LowerWearA {
     Lower5
 }
 
-
 //GLOBAL VARIABLES
 const communicationsTimeout = 100;
 
