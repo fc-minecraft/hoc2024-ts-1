@@ -1,8 +1,8 @@
 // ENUMS
 
 enum Drums {
-    //% block="none"
-    None,    
+    //% block="stop"
+    Stop,    
     //% block="slow"
     Slow,
     //% block="medium"
@@ -191,7 +191,7 @@ namespace hoc {
     //% block="`Instrument.Drum` %s"
     export function drums(d: Drums): void {
         switch (d) {
-            case Drums.None:
+            case Drums.Stop:
                 player.execute("scoreboard players reset * song.drums")
                 break;
             case Drums.Slow:
