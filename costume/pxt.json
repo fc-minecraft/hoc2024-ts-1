@@ -5,7 +5,7 @@
     "dependencies": {
         "core": "*",
         "builder": "*",
-        "minecraft-python-extension-sample": "github:github:ReWrite-Media/hoc2024-ts"
+        "minecraft-python-extension-sample": "github:ReWrite-Media/hoc2024-ts"
     },
     "files": [
         "main.ts"
