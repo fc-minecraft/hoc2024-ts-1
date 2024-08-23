@@ -54,6 +54,18 @@ enum Instrument {
     Villager
 }
 
+enum Instrument_Activity {
+    //% blockIdentity="blocks.custom" enumval=1 block="xylophone"
+    //% jres alias=Xylophone
+    Xylophone,
+    //% blockIdentity="blocks.custom" enumval=2 block="guitar"
+    //% jres alias=Guitar
+    Guitar,
+    //% blockIdentity="blocks.custom" enumval=5 block="bells"
+    //% jres alias=Bells
+    Bells
+}
+
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc {
     // MUSIC ACTIVITY
@@ -98,6 +110,24 @@ namespace hoc {
         loops.pause(communicationsTimeout)
     }
 
+    //% block="add instrument %i"
+    //% i.fieldEditor="gridpicker"
+    //% i.fieldOptions.columns=4
+    export function _add_instrument_activity(i: Instrument_Activity): void {
+        switch (i) {
+            case Instrument_Activity.Xylophone:
+                player.execute("scoreboard players set xylophone song.inst 01")
+                break;
+            case Instrument_Activity.Guitar:
+                player.execute("scoreboard players set guitar song.inst 01")
+                break;
+            case Instrument_Activity.Bells:
+                player.execute("scoreboard players set bells song.inst 01")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+    }
+
     /**
      * This function allows you to remove any instrument that's currently
      * added.
@@ -135,6 +165,24 @@ namespace hoc {
                 break;
             case Instrument.Villager:
                 player.execute("scoreboard players set villager song.inst 00")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+    }
+
+    //% block="remove instrument %i"
+    //% i.fieldEditor="gridpicker"
+    //% i.fieldOptions.columns=4
+    export function _remove_instrument_activity(i: Instrument_Activity): void {
+        switch (i) {
+            case Instrument_Activity.Xylophone:
+                player.execute("scoreboard players set xylophone song.inst 00")
+                break;
+            case Instrument_Activity.Guitar:
+                player.execute("scoreboard players set guitar song.inst 00")
+                break;
+            case Instrument_Activity.Bells:
+                player.execute("scoreboard players set bells song.inst 00")
                 break;
         }
         loops.pause(communicationsTimeout)
