@@ -54,7 +54,7 @@ namespace hoc {
      *
      */    
     //% block="dance step %s"
-    export function _dances_makecode(d: Dance): void {
+    export function dance(d: Dance): void {
         switch (d) {
             case Dance.Move1:
                 player.execute("scoreboard players set move dance.var 01")
