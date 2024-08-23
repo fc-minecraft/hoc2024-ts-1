@@ -54,9 +54,6 @@ enum Instrument {
     Villager
 }
 
-//GLOBAL VARIABLES
-const communicationsTimeout = 100;
-
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc {
     // MUSIC ACTIVITY
