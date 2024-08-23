@@ -1,0 +1,22 @@
+{
+    "name": "hoc2024-ts-music",
+    "version": "0.0.1",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "builder": "*",
+        "minecraft-python-extension-sample": "github:github:ReWrite-Media/hoc2024-ts"
+    },
+    "files": [
+        "main.ts"
+    ],
+    "testFiles": [],
+    "targetVersions": {
+        "target": "1.8.5",
+        "targetId": "minecraft"
+    },
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "tsprj"
+}
