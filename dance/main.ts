@@ -35,11 +35,11 @@ enum _Dances_Actvity {
     //% block="golem gallop"
     Move1,
     //% block="shulker shuffle"
-    Move2,
-    //% block="mushroom march"
     Move3,
+    //% block="mushroom march"
+    Move4,
     //% block="creeper clap"
-    Move4
+    Move6
 }
 
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
@@ -109,13 +109,13 @@ namespace hoc {
             case _Dances_Actvity.Move1:
                 player.execute("scoreboard players set move dance.var 01")
                 break;
-            case _Dances_Actvity.Move2:
+            case _Dances_Actvity.Move3:
                 player.execute("scoreboard players set move dance.var 03")
                 break;
-            case _Dances_Actvity.Move3:
+            case _Dances_Actvity.Move4:
                 player.execute("scoreboard players set move dance.var 04")
                 break;
-            case _Dances_Actvity.Move4:
+            case _Dances_Actvity.Move6:
                 player.execute("scoreboard players set move dance.var 06")
                 break;
         }
