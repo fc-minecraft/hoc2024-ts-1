@@ -4,7 +4,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "builder": "*"
+        "builder": "*",
+        "hoc2024-ts": "github:ReWrite-Media/hoc2024-ts"
     },
     "files": [
         "main.ts",
