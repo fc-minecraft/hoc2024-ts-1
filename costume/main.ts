@@ -1,39 +1,42 @@
 enum HeadWear {
-    //% blockIdentity="blocks.custom" enumval=1 block="superstar"
+    //% block="superstar"
     //% jres alias=Superstar_Hat
     Superstar_Hat,
-    //% blockIdentity="blocks.custom" enumval=2 block="knight helmet"
+    //% block="knight helmet"
     //% jres alias=Knight_Helmet
     Knight_Helmet,
-    //% blockIdentity="blocks.custom" enumval=3 block="sun glasses"
+    //% block="sun glasses"
     //% jres alias=Sun_Glasses
     Sun_Glasses,
-    //% blockIdentity="blocks.custom" enumval=4 block="reading glasses"
+    //% block="reading glasses"
     //% jres alias=Reading_Glasses
     Reading_Glasses,
-    //% blockIdentity="blocks.custom" enumval=5 block="cowboy hat"
+    //% block="cowboy hat"
     //% jres alias=Cowboy_Hat
     Cowboy_Hat,
-    //% blockIdentity="blocks.custom" enumval=6 block="astronaut helmet"
+    //% block="astronaut helmet"
     //% jres alias=Astronaut_Helmet
     Astronaut_Helmet,
-    //% blockIdentity="blocks.custom" enumval=7 block="baseball hat"
+    //% block="baseball hat"
     //% jres alias=Baseball_Hat
     Baseball_Hat,
-    //% blockIdentity="blocks.custom" enumval=8 block="construction helmet"
+    //% block="construction helmet"
     //% jres alias=Construction_Helmet
     Construction_Helmet,
-    //% blockIdentity="blocks.custom" enumval=9 block="ballerina crown"
+    //% block="ballerina crown"
     //% jres alias=Ballerina_Crown
     Ballerina_Crown,
 }
 
 enum HeadWear_Activity {
     //% block="knight helmet"
+    //% jres alias=Knight_Helmet
     Knight_Helmet,
     //% block="cowboy hat"
+    //% jres alias=Cowboy_Hat
     Cowboy_Hat,
     //% block="astronaut helmet"
+    //% jres alias=Astronaut_Helmet
     Astronaut_Helmet
 }
 
@@ -70,40 +73,55 @@ enum MidWear {
 
 enum MidWear_Activity {
     //% block="cowboy shirt"
+    //% jres alias=Cowboy_Shirt
     Cowboy_Shirt,
     //% block="astronaut suit"
+    //% jres alias=Astronaut_Top
     Astronaut_Top,
     //% block="knight armor"
+    //% jres alias=Knight_Top
     Knight_Top
 }
 
 enum LowerWear {
     //% block="superstar"
+    //% jres alias=Superstar_Pants
     Superstar_Pants,
     //% block="swim shorts"
+    //% jres alias=Swim_Shorts
     Swim_Shorts,
     //% block="knight leggings"
+    //% jres alias=Knight_Legs
     Knight_Legs,
     //% block="cowboy jeans"
+    //% jres alias=Cowboy_Pants
     Cowboy_Pants,
     //% block="astronaut pants"
+    //% jres alias=Astronaut_Legs
     Astronaut_Legs,
     //% block="khaki shorts"
+    //% jres alias=Khaki_Shorts
     Khaki_Shorts,
     //% block="boots"
+    //% jres alias=Black_Boots
     Black_Boots,
     //% block="construction jeans"
+    //% jres alias=Construction_Pants
     Construction_Pants,
     //% block="ballerina tutu"
+    //% jres alias=Ballerina_Tutu
     Ballerina_Tutu
 }
 
 enum LowerWear_Activity {
     //% block="knight leggings"
+    //% jres alias=Knight_Legs
     Knight_Legs,
     //% block="cowboy jeans"
+    //% jres alias=Cowboy_Pants
     Cowboy_Pants,
     //% block="astronaut pants"
+    //% jres alias=Astronaut_Legs
     Astronaut_Legs
 }
 
@@ -124,11 +142,11 @@ namespace hoc {
      */        
     //% block="head %u body %m legs %l"
     //% u.fieldEditor="gridpicker"
-    //% u.fieldOptions.columns=4
+    //% u.fieldOptions.columns=3
     //% m.fieldEditor="gridpicker"
-    //% m.fieldOptions.columns=4
+    //% m.fieldOptions.columns=3
     //% l.fieldEditor="gridpicker"
-    //% l.fieldOptions.columns=4   
+    //% l.fieldOptions.columns=3   
     export function costume(u: HeadWear, m: MidWear, l: LowerWear): void {
         switch (u) {
             case HeadWear.Superstar_Hat:
