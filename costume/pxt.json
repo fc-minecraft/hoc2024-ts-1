@@ -8,7 +8,8 @@
     },
     "files": [
         "main.ts",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "headware_activity.jres"
     ],
     "testFiles": [],
     "targetVersions": {
