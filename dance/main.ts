@@ -55,6 +55,9 @@ namespace hoc {
      * This function instructs which dance should be done.
      * 
      * Usage Example: hoc.dance(Dance.Move8)
+     * 
+     * Valid parameters are:
+     * Dance.Move1, Dance.Move2, Dance.Move3, Dance.Move4 all the way through Dance.Move14
      */    
     //% block="dance step %s"
     export function dance(d: Dance): void {

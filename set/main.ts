@@ -86,6 +86,16 @@ namespace hoc {
      * This function sets the biome, time, and weather for the set.
      * 
      * Usage Example: hoc.set(Biome.Savannah, Time.Day, Weather.Rain)
+     * 
+     * Valid Biome parameters are:
+     * Biome.Savannah, Biome.Taiga, Biome.Desert, Biome.Jungle, Biome.Forest
+     * Biome.Ocean, Biome.Nether, Biome.End, Biome.City, Biome.Space
+     * 
+     * Valid Time parameters are:
+     * Time.Sunrise, Time.Day, Time.Sunset, Time.Night
+     * 
+     * Valid Climate paramerers are:
+     * Climate.Clear, Climate.Snow, Climate.Rain, Climate.Thunderstorm
      */        
     //% block="biome %b time %t weather %w"
     export function set(b: Biome, t: Time, w: Climate): void {

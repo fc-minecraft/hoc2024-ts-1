@@ -139,6 +139,19 @@ namespace hoc {
      * clothing items should be placed on the head, body and leggs
      * 
      * Usage Example: hoc.costume(HeadWear.Knight_Helmet, MidWear.Knight_Top, LowerWear.Knight_Legs)
+     * 
+     * Valid HeadWear parameters are:
+     * Astronaut_Helmet, Ballerina_Crown, Baseball_Hat, Construction_Helmet
+     * Cowboy_Hat, Knight_Helmet, Reading_Glasses, Sun_Glasses, Superstar_Hat
+     * 
+     * Valid MidWear parameters are:
+     * Astronaut_Top, Ballerina_Shirt, Basketball_Jersey, Construction_Shirt
+     * Cowboy_Shirt, Green_TShirt, Knight_Top, Superstar_Shirt, Varsity_Jacket
+     * 
+     * Valid LowerWear parameters are:
+     * Astronaut_Legs, Ballerina_Tutu, Black_Boots, Construction_Pants
+     * Cowboy_Pants, Khaki_Shorts, Knight_Legs, Superstar_Pants, Swim_Shorts
+     * 
      */        
     //% block="head %u body %m legs %l"
     //% u.fieldEditor="gridpicker" u.fieldOptions.width=140 u.fieldOptions.columns=3
