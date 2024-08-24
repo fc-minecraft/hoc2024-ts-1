@@ -244,6 +244,12 @@ namespace hoc {
 
     //ACTIVITY
     //% block="head %u body %m legs %l"
+    //% u.fieldEditor="gridpicker"
+    //% u.fieldOptions.columns=3
+    //% m.fieldEditor="gridpicker"
+    //% m.fieldOptions.columns=3
+    //% l.fieldEditor="gridpicker"
+    //% l.fieldOptions.columns=3
     export function _costume_activity(u: HeadWear_Activity, m: MidWear_Activity, l: LowerWear_Activity): void {
         switch (u) {
             case HeadWear_Activity.Knight_Helmet:
