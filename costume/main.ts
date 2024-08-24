@@ -1,21 +1,30 @@
 enum HeadWear {
     //% block="superstar"
+    //% jres alias=Superstar_Hat
     Superstar_Hat,
     //% block="knight helmet"
+    //% jres alias=Knight_Helmet
     Knight_Helmet,
     //% block="sun glasses"
+    //% jres alias=Sun_Glasses
     Sun_Glasses,
     //% block="reading glasses"
+    //% jres alias=Reading_Glasses
     Reading_Glasses,
     //% block="cowboy hat"
-    Cowboy_Hat,    
+    //% jres alias=Cowboy_Hat
+    Cowboy_Hat,
     //% block="astronaut helmet"
+    //% jres alias=Astronaut_Helmet
     Astronaut_Helmet,
     //% block="baseball hat"
+    //% jres alias=Baseball_Hat
     Baseball_Hat,
     //% block="construction helmet"
+    //% jres alias=Construction_Helmet
     Construction_Helmet,
     //% block="ballerina crown"
+    //% jres alias=Ballerina_Crown
     Ballerina_Crown,
 }
 
