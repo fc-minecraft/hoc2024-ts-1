@@ -186,7 +186,7 @@ namespace hoc {
     }
 
     /**
-     * This function allows you to add one of 8 different instruments.
+     * This function allows you to set what note to play.
      * 
      * Usage Example: hoc.note(Note.Do)
      */       
