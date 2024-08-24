@@ -142,8 +142,8 @@ namespace hoc {
      */        
     //% block="head %u body %m legs %l"
     //% u.fieldEditor="gridpicker" u.fieldOptions.width=140 u.fieldOptions.columns=3
-    //% m.fieldEditor="gridpicker" m.fieldOptions.width=240 m.fieldOptions.columns=3
-    //% l.fieldEditor="gridpicker" l.fieldOptions.width=340 l.fieldOptions.columns=3
+    //% m.fieldEditor="gridpicker" m.fieldOptions.width=140 m.fieldOptions.columns=3
+    //% l.fieldEditor="gridpicker" l.fieldOptions.width=140 l.fieldOptions.columns=3
     //%   
     export function costume(u: HeadWear, m: MidWear, l: LowerWear): void {
         switch (u) {
@@ -242,12 +242,9 @@ namespace hoc {
 
     //ACTIVITY
     //% block="head %u body %m legs %l"
-    //% u.fieldEditor="gridpicker"
-    //% u.fieldOptions.columns=3
-    //% m.fieldEditor="gridpicker"
-    //% m.fieldOptions.columns=3
-    //% l.fieldEditor="gridpicker"
-    //% l.fieldOptions.columns=3
+    //% u.fieldEditor="gridpicker" u.fieldOptions.width=140 u.fieldOptions.columns=3
+    //% m.fieldEditor="gridpicker" m.fieldOptions.width=140 m.fieldOptions.columns=3
+    //% l.fieldEditor="gridpicker" l.fieldOptions.width=140 l.fieldOptions.columns=3
     export function _costume_activity(u: HeadWear_Activity, m: MidWear_Activity, l: LowerWear_Activity): void {
         switch (u) {
             case HeadWear_Activity.Knight_Helmet:
