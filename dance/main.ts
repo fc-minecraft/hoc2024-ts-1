@@ -53,8 +53,8 @@ namespace hoc {
     //SANDBOX
     /**
      * This function instructs which dance should be done.
-     * Valid Dances.Move1, Dances.Move2, etc all the way to Dances.Move14
-     *
+     * 
+     * Usage Example: hoc.dance(Dance.Move8)
      */    
     //% block="dance step %s"
     export function dance(d: Dance): void {
