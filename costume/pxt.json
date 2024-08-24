@@ -9,7 +9,12 @@
     "files": [
         "main.ts",
         "tutorial-info-cache.json",
-        "headware_activity.jres"
+        "headware_activity.jres",
+        "headwear.jres",
+        "lowerwear_activity.jres",
+        "lowerwear.jres",
+        "midwear_activity.jres",
+        "midwear.jres"
     ],
     "testFiles": [],
     "targetVersions": {
