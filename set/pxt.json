@@ -1,6 +1,6 @@
 {
     "name": "hoc2024-ts-set",
-    "version": "0.0.95",
+    "version": "0.0.96",
     "description": "",
     "dependencies": {
         "core": "*",
