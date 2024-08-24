@@ -54,6 +54,18 @@ enum Instrument {
     Villager
 }
 
+enum Instrument_Activity {
+    //% blockIdentity="blocks.custom" enumval=9 block="xylophone"
+    //% jres alias=Xylophone
+    Xylophone,
+    //% blockIdentity="blocks.custom" enumval=10 block="guitar"
+    //% jres alias=Guitar
+    Guitar,
+    //% blockIdentity="blocks.custom" enumval=11 block="bells"
+    //% jres alias=Bells
+    Bells
+}
+
 //GLOBAL VARIABLES
 const communicationsTimeout = 100;
 
@@ -101,7 +113,6 @@ namespace hoc {
         loops.pause(communicationsTimeout)
     }
 
-
     /**
      * This function allows you to remove any instrument that's currently
      * added.
@@ -144,6 +155,41 @@ namespace hoc {
         loops.pause(communicationsTimeout)
     }
 
+    //% block="add instrument %i"
+    //% i.fieldEditor="gridpicker"
+    //% i.fieldOptions.columns=3
+    export function _add_instrument_activity(i: Instrument_Activity): void {
+        switch (i) {
+            case Instrument_Activity.Xylophone:
+                player.execute("scoreboard players set xylophone song.inst 01")
+                break;
+            case Instrument_Activity.Guitar:
+                player.execute("scoreboard players set guitar song.inst 01")
+                break;
+            case Instrument_Activity.Bells:
+                player.execute("scoreboard players set bells song.inst 01")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+    }
+
+    //% block="remove instrument %i"
+    //% i.fieldEditor="gridpicker"
+    //% i.fieldOptions.columns=3
+    export function _remove_instrument_activity(i: Instrument_Activity): void {
+        switch (i) {
+            case Instrument_Activity.Xylophone:
+                player.execute("scoreboard players set xylophone song.inst 00")
+                break;
+            case Instrument_Activity.Guitar:
+                player.execute("scoreboard players set guitar song.inst 00")
+                break;
+            case Instrument_Activity.Bells:
+                player.execute("scoreboard players set bells song.inst 00")
+                break;
+        }
+        loops.pause(communicationsTimeout)
+    }
 
     /**
      * This function allows you to add one of 8 different instruments.
