@@ -1,7 +1,7 @@
 //enums
 
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
-namespace hoc2024 {
+namespace hoc {
 
 
 // TUTORIAL ACTIVITY
