@@ -1,6 +1,6 @@
 {
     "name": "hoc2024-ts-dance",
-    "version": "0.0.68",
+    "version": "0.0.83",
     "description": "",
     "dependencies": {
         "core": "*",
