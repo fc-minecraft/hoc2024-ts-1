@@ -40,22 +40,31 @@ enum HeadWear_Activity {
 
 enum MidWear {
     //% block="superstar"
+    //% jres alias=Superstar_Shirt
     Superstar_Shirt,
     //% block="construction shirt"
+    //% jres alias=Construction_Shirt
     Construction_Shirt,
     //% block="cowboy shirt"
+    //% jres alias=Cowboy_Shirt
     Cowboy_Shirt,
     //% block="astronaut suit"
+    //% jres alias=Astronaut_Top
     Astronaut_Top,
     //% block="knight armor"
+    //% jres alias=Knight_Top
     Knight_Top,    
     //% block="varsity jacket"
+    //% jres alias=Varsity_Jacket
     Varsity_Jacket,
     //% block="green t-shirt"
+    //% jres alias=Green_TShirt
     Green_TShirt,
     //% block="backsetball jersey"
+    //% jres alias=Basketball_Jersey
     Basketball_Jersey,
     //% block="ballerina shirt"
+    //% jres alias=Ballerina_Shirt
     Ballerina_Shirt
 }
 
@@ -114,6 +123,12 @@ namespace hoc {
      * Usage Example: hoc.costume(HeadWear.Knight_Helmet, MidWear.Knight_Top, LowerWear.Knight_Legs)
      */        
     //% block="head %u body %m legs %l"
+    //% u.fieldEditor="gridpicker"
+    //% u.fieldOptions.columns=4
+    //% m.fieldEditor="gridpicker"
+    //% m.fieldOptions.columns=4
+    //% l.fieldEditor="gridpicker"
+    //% l.fieldOptions.columns=4   
     export function costume(u: HeadWear, m: MidWear, l: LowerWear): void {
         switch (u) {
             case HeadWear.Superstar_Hat:
