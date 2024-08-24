@@ -30,98 +30,98 @@ enum HeadWear {
 
 enum HeadWear_Activity {
     //% block="knight helmet"
-    //% jres alias=Knight_Helmet
+    //% jres 
     Knight_Helmet,
     //% block="cowboy hat"
-    //% jres alias=Cowboy_Hat
+    //% jres 
     Cowboy_Hat,
     //% block="astronaut helmet"
-    //% jres alias=Astronaut_Helmet
+    //% jres 
     Astronaut_Helmet
 }
 
 
 enum MidWear {
     //% block="superstar"
-    //% jres alias=Superstar_Shirt
+    //% jres 
     Superstar_Shirt,
     //% block="construction shirt"
-    //% jres alias=Construction_Shirt
+    //% jres 
     Construction_Shirt,
     //% block="cowboy shirt"
-    //% jres alias=Cowboy_Shirt
+    //% jres 
     Cowboy_Shirt,
     //% block="astronaut suit"
-    //% jres alias=Astronaut_Top
+    //% jres 
     Astronaut_Top,
     //% block="knight armor"
-    //% jres alias=Knight_Top
+    //% jres 
     Knight_Top,    
     //% block="varsity jacket"
-    //% jres alias=Varsity_Jacket
+    //% jres 
     Varsity_Jacket,
     //% block="green t-shirt"
-    //% jres alias=Green_TShirt
+    //% jres 
     Green_TShirt,
     //% block="backsetball jersey"
-    //% jres alias=Basketball_Jersey
+    //% jres 
     Basketball_Jersey,
     //% block="ballerina shirt"
-    //% jres alias=Ballerina_Shirt
+    //% jres 
     Ballerina_Shirt
 }
 
 enum MidWear_Activity {
     //% block="cowboy shirt"
-    //% jres alias=Cowboy_Shirt
+    //% jres 
     Cowboy_Shirt,
     //% block="astronaut suit"
-    //% jres alias=Astronaut_Top
+    //% jres 
     Astronaut_Top,
     //% block="knight armor"
-    //% jres alias=Knight_Top
+    //% jres 
     Knight_Top
 }
 
 enum LowerWear {
     //% block="superstar"
-    //% jres alias=Superstar_Pants
+    //% jres 
     Superstar_Pants,
     //% block="swim shorts"
-    //% jres alias=Swim_Shorts
+    //% jres 
     Swim_Shorts,
     //% block="knight leggings"
-    //% jres alias=Knight_Legs
+    //% jres 
     Knight_Legs,
     //% block="cowboy jeans"
-    //% jres alias=Cowboy_Pants
+    //% jres 
     Cowboy_Pants,
     //% block="astronaut pants"
-    //% jres alias=Astronaut_Legs
+    //% jres 
     Astronaut_Legs,
     //% block="khaki shorts"
-    //% jres alias=Khaki_Shorts
+    //% jres 
     Khaki_Shorts,
     //% block="boots"
-    //% jres alias=Black_Boots
+    //% jres 
     Black_Boots,
     //% block="construction jeans"
-    //% jres alias=Construction_Pants
+    //% jres 
     Construction_Pants,
     //% block="ballerina tutu"
-    //% jres alias=Ballerina_Tutu
+    //% jres 
     Ballerina_Tutu
 }
 
 enum LowerWear_Activity {
     //% block="knight leggings"
-    //% jres alias=Knight_Legs
+    //% jres 
     Knight_Legs,
     //% block="cowboy jeans"
-    //% jres alias=Cowboy_Pants
+    //% jres 
     Cowboy_Pants,
     //% block="astronaut pants"
-    //% jres alias=Astronaut_Legs
+    //% jres 
     Astronaut_Legs
 }
 
