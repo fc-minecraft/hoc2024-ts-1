@@ -4,8 +4,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "builder": "*",
-        "minecraft-python-extension-sample": "github:ReWrite-Media/hoc2024-ts"
+        "builder": "*"
     },
     "files": [
         "main.ts"
