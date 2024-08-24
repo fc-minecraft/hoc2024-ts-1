@@ -56,13 +56,13 @@ enum Instrument {
 
 enum Instrument_Activity {
     //% blockIdentity="blocks.custom" enumval=9 block="xylophone"
-    //% jres alias=Xylophone
+    //% jres alias=Instrument.Xylophone
     Xylophone,
     //% blockIdentity="blocks.custom" enumval=10 block="guitar"
-    //% jres alias=Guitar
+    //% jres alias=Instrument.Guitar
     Guitar,
     //% blockIdentity="blocks.custom" enumval=11 block="bells"
-    //% jres alias=Bells
+    //% jres alias=Instrument.Bells
     Bells
 }
 
