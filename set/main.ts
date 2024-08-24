@@ -56,7 +56,7 @@ enum Time_Activity {
 
 enum Climate {
     //% block="clear"
-    Clear,
+    Clear_Sky,
     //% block="snow"
     Snow,
     //% block="rain"
@@ -67,7 +67,7 @@ enum Climate {
 
 enum Weather_Activity {
     //% block="clear"
-    Clear,
+    Clear_Sky,
     //% block="snow"
     Snow,
     //% block="rain"
@@ -140,7 +140,7 @@ namespace hoc {
         loops.pause(communicationsTimeout)
 
         switch (w) {
-            case Climate.Clear:
+            case Climate.Clear_Sky:
                 player.execute("scoreboard players set weather set.var 01")
                 break;
             case Climate.Snow:
@@ -186,7 +186,7 @@ namespace hoc {
         loops.pause(communicationsTimeout)
 
         switch (w) {
-            case Weather_Activity.Clear:
+            case Weather_Activity.Clear_Sky:
                 player.execute("scoreboard players set weather set.var 01")
                 break;
             case Weather_Activity.Snow:
