@@ -10,8 +10,7 @@
     "files": [
         "main.ts",
         "tutorial-info-cache.json",
-        "instrument.jres",
-        "instrument_activity.jres"
+        "instrument.jres"
     ],
     "testFiles": [],
     "targetVersions": {
