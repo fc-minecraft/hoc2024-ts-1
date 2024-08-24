@@ -141,12 +141,10 @@ namespace hoc {
      * Usage Example: hoc.costume(HeadWear.Knight_Helmet, MidWear.Knight_Top, LowerWear.Knight_Legs)
      */        
     //% block="head %u body %m legs %l"
-    //% u.fieldEditor="gridpicker"
-    //% u.fieldOptions.columns=3
-    //% m.fieldEditor="gridpicker"
-    //% m.fieldOptions.columns=3
-    //% l.fieldEditor="gridpicker"
-    //% l.fieldOptions.columns=3   
+    //% u.fieldEditor="gridpicker" u.fieldOptions.width=140 u.fieldOptions.columns=3
+    //% m.fieldEditor="gridpicker" m.fieldOptions.width=240 m.fieldOptions.columns=3
+    //% l.fieldEditor="gridpicker" l.fieldOptions.width=340 l.fieldOptions.columns=3
+    //%   
     export function costume(u: HeadWear, m: MidWear, l: LowerWear): void {
         switch (u) {
             case HeadWear.Superstar_Hat:
