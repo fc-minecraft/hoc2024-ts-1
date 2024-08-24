@@ -54,17 +54,7 @@ enum Instrument {
     Villager
 }
 
-enum Instrument_Activity {
-    //% blockIdentity="blocks.custom" enumval=9 block="xylophone"
-    //% jres alias=Xylophone
-    Xylophone,
-    //% blockIdentity="blocks.custom" enumval=10 block="guitar"
-    //% jres alias=Guitar
-    Guitar,
-    //% blockIdentity="blocks.custom" enumval=11 block="bells"
-    //% jres alias=Bells
-    Bells
-}
+
 
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc {
