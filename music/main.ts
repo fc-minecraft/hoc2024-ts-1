@@ -75,10 +75,7 @@ namespace hoc {
     /**
      * This function allows you to add one of 8 different instruments.
      * 
-     * Valid parameters are:
-     * Instrument.Synth, Instrument.Xylophone, Instrument.Guitar
-     * Instrument.Flute, Instrument.Bells, Instrument.Bass
-     * Instrument.Piano, Instrument.Villager
+     * Usage Example: hoc.add_instrument(Instrument.Guitar)
      */    
     //% block="add instrument %i"
     //% i.fieldEditor="gridpicker"
@@ -117,10 +114,7 @@ namespace hoc {
      * This function allows you to remove any instrument that's currently
      * added.
      * 
-     * Valid parameters are:
-     * Instrument.Synth, Instrument.Xylophone, Instrument.Guitar
-     * Instrument.Flute, Instrument.Bells, Instrument.Bass
-     * Instrument.Piano, Instrument.Villager
+     * Usage Example: hoc.remove_instrument(Instrument.Guitar)
      */       
     //% block="remove instrument %i"
     //% i.fieldEditor="gridpicker"
@@ -194,8 +188,7 @@ namespace hoc {
     /**
      * This function allows you to add one of 8 different instruments.
      * 
-     * Valid parameters are:
-     * Note.Do, Note.Re, Note.Mi, Note.Fa, Note.So, Note.La, Note.Ti
+     * Usage Example: hoc.note(Note.Do)
      */       
     //% block="note %k"
     export function note(k: Note): void {
@@ -236,8 +229,7 @@ namespace hoc {
     /**
      * This function allows you to start or stop a drum beat.
      * 
-     * Valid parameters are:
-     * Drums.None, Drums.Slow, Drums.Medium, Drums.Fast
+     * Usage Example: hoc.drums(Drums.Fast)
      */    
     //% block="`Instrument.Drum` %s"
     export function drums(d: Drums): void {
