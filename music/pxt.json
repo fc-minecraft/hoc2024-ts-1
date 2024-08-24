@@ -1,6 +1,6 @@
 {
     "name": "hoc2024-ts-music",
-    "version": "0.0.99",
+    "version": "0.0.103",
     "description": "",
     "dependencies": {
         "core": "*",
