@@ -54,7 +54,7 @@ enum Time_Activity {
 
 }
 
-enum Weather {
+enum Climate {
     //% block="clear"
     Clear,
     //% block="snow"
@@ -88,7 +88,7 @@ namespace hoc {
      * Usage Example: hoc.set(Biome.Savannah, Time.Day, Weather.Rain)
      */        
     //% block="biome %b time %t weather %w"
-    export function set(b: Biome, t: Time, w: Weather): void {
+    export function set(b: Biome, t: Time, w: Climate): void {
         switch (b) {
             case Biome.Savannah:
                 player.execute("scoreboard players set biome set.var 01")
@@ -140,16 +140,16 @@ namespace hoc {
         loops.pause(communicationsTimeout)
 
         switch (w) {
-            case Weather.Clear:
+            case Climate.Clear:
                 player.execute("scoreboard players set weather set.var 01")
                 break;
-            case Weather.Snow:
+            case Climate.Snow:
                 player.execute("scoreboard players set weather set.var 02")
                 break;
-            case Weather.Rain:
+            case Climate.Rain:
                 player.execute("scoreboard players set weather set.var 03")
                 break;
-            case Weather.Thunderstorm:
+            case Climate.Thunderstorm:
                 player.execute("scoreboard players set weather set.var 04")
                 break;
         }
@@ -158,7 +158,7 @@ namespace hoc {
 
     //ACTIVITY
     //% block="biome %b time %t weather %w"
-    export function seta(b: Biome_Activity, t: Time_Activity, w: Weather_Activity): void {
+    export function _set_activity(b: Biome_Activity, t: Time_Activity, w: Weather_Activity): void {
         switch (b) {
             case Biome_Activity.Taiga:
                 player.execute("scoreboard players set biome set.var 02")
