@@ -29,40 +29,40 @@ enum Note {
 }
 enum Instrument {
     //% blockIdentity="blocks.custom" enumval=0 block="synth"
-    //% jres alias=Synth
+    //% jres 
     Synth,
     //% blockIdentity="blocks.custom" enumval=1 block="xylophone"
-    //% jres alias=Xylophone
+    //% jres 
     Xylophone,
     //% blockIdentity="blocks.custom" enumval=2 block="guitar"
-    //% jres alias=Guitar
+    //% jres 
     Guitar,
     //% blockIdentity="blocks.custom" enumval=3 block="flute"
-    //% jres alias=Flute
+    //% jres
     Flute,
     //% blockIdentity="blocks.custom" enumval=5 block="bells"
-    //% jres alias=Bells
+    //% jres
     Bells,
     //% blockIdentity="blocks.custom" enumval=6 block="bass"
-    //% jres alias=Bass
+    //% jres
     Bass,
     //% blockIdentity="blocks.custom" enumval=7 block="piano"
-    //% jres alias=Piano
+    //% jres
     Piano,
     //% blockIdentity="blocks.custom" enumval=8 block="villager"
-    //% jres alias=Villager
+    //% jres
     Villager
 }
 
 enum Instrument_Activity {
     //% blockIdentity="blocks.custom" enumval=9 block="xylophone"
-    //% jres alias=Instrument.Xylophone
+    //% jres
     Xylophone,
     //% blockIdentity="blocks.custom" enumval=10 block="guitar"
-    //% jres alias=Instrument.Guitar
+    //% jres
     Guitar,
     //% blockIdentity="blocks.custom" enumval=11 block="bells"
-    //% jres alias=Instrument.Bells
+    //% jres
     Bells
 }
 
