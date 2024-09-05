@@ -3,9 +3,9 @@
 enum Dance {
     //% block="golem gallop"
     Move1,
-    //% block="wither wave"
+    //% block="dolphin disco"
     Move2,
-    //% block="shulker shuffle"
+    //% block="wither wave"
     Move3,
     //% block="mushroom march"
     Move4,
@@ -17,29 +17,23 @@ enum Dance {
     Move7,
     //% block="hoglin hand jive"
     Move8,
-    //% block="broken Agent"
+    //% block="dungeon dig"
     Move9,
-    //% block="warden whirl"
+    //% block="alex axle"
     Move10,
-    //% block="DANCE 11"
-    Move11,
-    //% block="DANCE 12"
-    Move12,
-    //% block="DANCE 13"
-    Move13,
-    //% block="DANCE 14"
-    Move14
+    //% block="warden whirl"
+    Move11
 }
 
 enum _Dances_Actvity {
     //% block="golem gallop"
     Move1,
+    //% block="dolphin disco"
+    Move2,    
     //% block="wither wave"
-    Move2,
-    //% block="shulker shuffle"
     Move3,
     //% block="mushroom march"
-    Move4,
+    Move4
 }
 
 //GLOBAL VARIABLES
