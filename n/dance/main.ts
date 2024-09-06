@@ -29,11 +29,22 @@ enum _Dances_Actvity {
     //% block="golem gallop"
     Move1,
     //% block="dolphin disco"
-    Move2,    
+    Move2,
     //% block="wither wave"
     Move3,
     //% block="mushroom march"
     Move4
+}
+
+enum _Dances_Actvity_ArmorStand {
+    //% block="1"
+    One,
+    //% block="2"
+    Two,
+    //% block="3"
+    Three,
+    //% block="4"
+    Four
 }
 
 //GLOBAL VARIABLES
@@ -52,75 +63,94 @@ namespace hoc {
      * 
      * Valid parameters are:
      * Dance.Move1, Dance.Move2, Dance.Move3, Dance.Move4 all the way through Dance.Move14
-     */    
-    //% block="dance step %s"
-    export function dance(d: Dance): void {
+     */
+    //% block="character %n dance %d"
+    export function dance(d: Dance, n?: number): void {
+        var score = "0"
+        if (typeof n == 'undefined') {
+            score = "0"
+        } else if (Number(n) > 0 && Number(n) < 5) {
+            score = String(n)
+        } else {
+            score = "0"
+        }
         switch (d) {
             case Dance.Move1:
-                player.execute("scoreboard players set move dance.var 01")
+                score += "01"
                 break;
             case Dance.Move2:
-                player.execute("scoreboard players set move dance.var 02")
+                score += "02"
                 break;
             case Dance.Move3:
-                player.execute("scoreboard players set move dance.var 03")
+                score += "03"
                 break;
             case Dance.Move4:
-                player.execute("scoreboard players set move dance.var 04")
+                score += "04"
                 break;
             case Dance.Move5:
-                player.execute("scoreboard players set move dance.var 05")
+                score += "05"
                 break;
             case Dance.Move6:
-                player.execute("scoreboard players set move dance.var 06")
+                score += "06"
                 break;
             case Dance.Move7:
-                player.execute("scoreboard players set move dance.var 07")
+                score += "07"
                 break;
             case Dance.Move8:
-                player.execute("scoreboard players set move dance.var 08")
+                score += "08"
                 break;
             case Dance.Move9:
-                player.execute("scoreboard players set move dance.var 09")
+                score += "09"
                 break;
             case Dance.Move10:
-                player.execute("scoreboard players set move dance.var 10")
+                score += "10"
                 break;
             case Dance.Move11:
-                player.execute("scoreboard players set move dance.var 11")
-                break;
-            case Dance.Move12:
-                player.execute("scoreboard players set move dance.var 12")
-                break;
-            case Dance.Move13:
-                player.execute("scoreboard players set move dance.var 13")
-                break;
-            case Dance.Move14:
-                player.execute("scoreboard players set move dance.var 14")
+                score += "11"
                 break;
         }
+        player.execute("scoreboard players set move dance.var " + score)
         loops.pause(communicationsTimeout)
     }
 
     //ACTIVITY
-    //% block="dance step %s"
-    export function _dance_activity(d: _Dances_Actvity): void {
-        switch (d) {
-            case _Dances_Actvity.Move1:
-                player.execute("scoreboard players set move dance.var 01")
+    //% block="armor stand %s dance %d"
+    export function _dance_activity(s: _Dances_Actvity_ArmorStand, d: _Dances_Actvity): void {
+        var score = "0"
+
+        switch (s) {
+            case _Dances_Actvity_ArmorStand.One:
+                score = "1";
                 break;
-            case _Dances_Actvity.Move2:
-                player.execute("scoreboard players set move dance.var 02")
+            case _Dances_Actvity_ArmorStand.Two:
+                score = "2";
                 break;
-            case _Dances_Actvity.Move3:
-                player.execute("scoreboard players set move dance.var 03")
+            case _Dances_Actvity_ArmorStand.Three:
+                score = "3";
                 break;
-            case _Dances_Actvity.Move4:
-                player.execute("scoreboard players set move dance.var 04")
+            case _Dances_Actvity_ArmorStand.Four:
+                score = "4";
                 break;
         }
+
+        switch (d) {
+            case _Dances_Actvity.Move1:
+                score += "01"
+                break;
+            case _Dances_Actvity.Move2:
+                score += "02"
+                break;
+            case _Dances_Actvity.Move3:
+                score += "03"
+                break;
+            case _Dances_Actvity.Move4:
+                score += "04"
+                break;
+        }
+
+        player.execute("scoreboard players set move dance.var " + score)
         loops.pause(communicationsTimeout)
     }
 
-// END DANCE ACTIVITY
+    // END DANCE ACTIVITY
 }
