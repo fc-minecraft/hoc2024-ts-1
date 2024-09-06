@@ -66,7 +66,7 @@ namespace hoc {
      */    
     //% block="dance step %s"
     export function dance(d: Dance): void {
-        var score = "0"
+        let score = "0"
         switch (d) {
             case Dance.Move1:
                 score += "01"
@@ -117,7 +117,7 @@ namespace hoc {
      */
     //% block="armor stand %n dance %d"
     export function armorstand_dance(a: ArmorStand, d: Dance): void {
-        var score = "0"
+        let score = "0"
         switch (a) {
             case ArmorStand.One:
                 score = "1";
@@ -174,7 +174,7 @@ namespace hoc {
     //ACTIVITY
     //% block="armor stand %s dance %d"
     export function _dance_activity(s: ArmorStand, d: _Dances_Actvity): void {
-        var score = "0"
+        let score = "0"
 
         switch (s) {
             case ArmorStand.One:
