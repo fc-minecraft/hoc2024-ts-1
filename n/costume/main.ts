@@ -278,6 +278,9 @@ namespace hoc {
             case HeadWear_Activity.Astronaut_Helmet:
                 player.execute("scoreboard players set upper costume.var 06")
                 break;
+            case HeadWear_Activity.Ballerina_Crown:
+                player.execute("scoreboard players set upper costume.var 09")
+                break;
         }
         loops.pause(communicationsTimeout)
 
@@ -291,6 +294,9 @@ namespace hoc {
             case MidWear_Activity.Knight_Top:
                 player.execute("scoreboard players set middle costume.var 05")
                 break;
+            case MidWear_Activity.Ballerina_Shirt:
+                player.execute("scoreboard players set middle costume.var 09")
+                break;
         }
         loops.pause(communicationsTimeout)
 
@@ -303,6 +309,9 @@ namespace hoc {
                 break;
             case LowerWear_Activity.Astronaut_Legs:
                 player.execute("scoreboard players set lower costume.var 05")
+                break;
+            case LowerWear_Activity.Ballerina_Tutu:
+                player.execute("scoreboard players set lower costume.var 09")
                 break;
         }
         loops.pause(communicationsTimeout)
