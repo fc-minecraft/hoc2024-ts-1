@@ -2,38 +2,38 @@
 
 enum Dance {
     //% block="golem gallop"
-    Move1,
+    GolemGallop,
     //% block="dolphin disco"
-    Move2,
+    DolphinDisco,
     //% block="wither wave"
-    Move3,
+    WitherWave,
     //% block="mushroom march"
-    Move4,
+    MushroomMarch,
     //% block="blaze bounce"
-    Move5,
+    BlazeBounce,
     //% block="creeper clap"
-    Move6,
+    CreeperClap,
     //% block="ravager romp"
-    Move7,
+    RavagerRomp,
     //% block="hoglin hand jive"
-    Move8,
+    HoglinHandJive,
     //% block="dungeon dig"
-    Move9,
+    DungeonDig,
     //% block="alex axle"
-    Move10,
+    AlexAxle,
     //% block="warden whirl"
-    Move11
+    WardenWhirl
 }
 
 enum _Dances_Actvity {
     //% block="golem gallop"
-    Move1,
+    GolemGallop,
     //% block="dolphin disco"
-    Move2,
+    DolphinDisco,
     //% block="wither wave"
-    Move3,
+    WitherWave,
     //% block="mushroom march"
-    Move4
+    MushroomMarch
 }
 
 enum ArmorStand {
@@ -62,43 +62,45 @@ namespace hoc {
      * Usage Example: hoc.dance(Dance.Move8)
      * 
      * Valid parameters are:
-     * Dance.Move1, Dance.Move2, Dance.Move3, Dance.Move4 all the way through Dance.Move14
+     * Dance.GolemGallop, Dance.DolphinDisco, Dance.WitherWave, Dance.MushroomMarch, 
+     * Dance.BlazeBounce, Dance.CreeperClap, Dance.RavagerRomp, Dance.HoglinHandJive, 
+     * Dance.DungeonDig, Dance.AlexAxle, Dance.WardenWhirl
      */    
     //% block="dance step %s"
     export function dance(d: Dance): void {
         let score = "0"
         switch (d) {
-            case Dance.Move1:
+            case Dance.GolemGallop:
                 score += "01"
                 break;
-            case Dance.Move2:
+            case Dance.DolphinDisco:
                 score += "02"
                 break;
-            case Dance.Move3:
+            case Dance.WitherWave:
                 score += "03"
                 break;
-            case Dance.Move4:
+            case Dance.MushroomMarch:
                 score += "04"
                 break;
-            case Dance.Move5:
+            case Dance.BlazeBounce:
                 score += "05"
                 break;
-            case Dance.Move6:
+            case Dance.CreeperClap:
                 score += "06"
                 break;
-            case Dance.Move7:
+            case Dance.RavagerRomp:
                 score += "07"
                 break;
-            case Dance.Move8:
+            case Dance.HoglinHandJive:
                 score += "08"
                 break;
-            case Dance.Move9:
+            case Dance.DungeonDig:
                 score += "09"
                 break;
-            case Dance.Move10:
+            case Dance.AlexAxle:
                 score += "10"
                 break;
-            case Dance.Move11:
+            case Dance.WardenWhirl:
                 score += "11"
                 break;
         }
@@ -113,10 +115,10 @@ namespace hoc {
      * Usage Example: hoc.dance(ArmorStand.One, Dance.Move8)
      * 
      * Valid parameters are:
-     * Dance.Move1, Dance.Move2, Dance.Move3, Dance.Move4 all the way through Dance.Move14
+     * Dance.DolphinDisco, Dance.MushroomMarch, Dance.GolemGallop, Dance.WitherWave
      */
     //% block="armor stand %n dance %d"
-    export function armorstand_dance(a: ArmorStand, d: Dance): void {
+    export function armorstand_dance(a: ArmorStand, d: _Dances_Actvity): void {
         let score = "0"
         switch (a) {
             case ArmorStand.One:
@@ -133,38 +135,17 @@ namespace hoc {
                 break;
         }
         switch (d) {
-            case Dance.Move1:
+            case _Dances_Actvity.GolemGallop:
                 score += "01"
                 break;
-            case Dance.Move2:
+            case _Dances_Actvity.DolphinDisco:
                 score += "02"
                 break;
-            case Dance.Move3:
+            case _Dances_Actvity.WitherWave:
                 score += "03"
                 break;
-            case Dance.Move4:
+            case _Dances_Actvity.MushroomMarch:
                 score += "04"
-                break;
-            case Dance.Move5:
-                score += "05"
-                break;
-            case Dance.Move6:
-                score += "06"
-                break;
-            case Dance.Move7:
-                score += "07"
-                break;
-            case Dance.Move8:
-                score += "08"
-                break;
-            case Dance.Move9:
-                score += "09"
-                break;
-            case Dance.Move10:
-                score += "10"
-                break;
-            case Dance.Move11:
-                score += "11"
                 break;
         }
         player.execute("scoreboard players set move dance.var " + score)
@@ -192,16 +173,16 @@ namespace hoc {
         }
 
         switch (d) {
-            case _Dances_Actvity.Move1:
+            case _Dances_Actvity.GolemGallop:
                 score += "01"
                 break;
-            case _Dances_Actvity.Move2:
+            case _Dances_Actvity.DolphinDisco:
                 score += "02"
                 break;
-            case _Dances_Actvity.Move3:
+            case _Dances_Actvity.WitherWave:
                 score += "03"
                 break;
-            case _Dances_Actvity.Move4:
+            case _Dances_Actvity.MushroomMarch:
                 score += "04"
                 break;
         }
