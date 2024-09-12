@@ -40,7 +40,10 @@ enum HeadWear_Activity {
     Astronaut_Helmet,
     //% block="ballerina crown"
     //% jres 
-    Ballerina_Crown
+    Ballerina_Crown,
+    //% block="construction helmet"
+    //% jres 
+    Construction_Helmet
 }
 
 
@@ -86,7 +89,10 @@ enum MidWear_Activity {
     Knight_Top,
     //% block="ballerina shirt"
     //% jres 
-    Ballerina_Shirt
+    Ballerina_Shirt,
+    //% block="construction shirt"
+    //% jres 
+    Construction_Shirt
 }
 
 enum LowerWear {
@@ -131,7 +137,10 @@ enum LowerWear_Activity {
     Astronaut_Legs,
     //% block="ballerina tutu"
     //% jres 
-    Ballerina_Tutu
+    Ballerina_Tutu,
+    //% block="construction jeans"
+    //% jres 
+    Construction_Pants
 }
 
 //GLOBAL VARIABLES
