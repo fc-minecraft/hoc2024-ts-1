@@ -69,7 +69,7 @@ enum MidWear {
     //% block="green t-shirt"
     //% jres 
     Green_TShirt,
-    //% block="backsetball jersey"
+    //% block="basketball jersey"
     //% jres 
     Basketball_Jersey,
     //% block="ballerina shirt"
