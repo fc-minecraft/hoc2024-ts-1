@@ -118,7 +118,7 @@ namespace hoc {
      * Dance.DolphinDisco, Dance.MushroomMarch, Dance.GolemGallop, Dance.WitherWave
      */
     //% block="armor stand %n dance %d"
-    export function armorstand_dance(a: ArmorStand, d: _Dances_Actvity): void {
+    export function armorstand_dance(a: ArmorStand, d: Dance): void {
         let score = "0"
         switch (a) {
             case ArmorStand.One:
@@ -135,16 +135,16 @@ namespace hoc {
                 break;
         }
         switch (d) {
-            case _Dances_Actvity.GolemGallop:
+            case Dance.GolemGallop:
                 score += "01"
                 break;
-            case _Dances_Actvity.DolphinDisco:
+            case Dance.DolphinDisco:
                 score += "02"
                 break;
-            case _Dances_Actvity.WitherWave:
+            case Dance.WitherWave:
                 score += "03"
                 break;
-            case _Dances_Actvity.MushroomMarch:
+            case Dance.MushroomMarch:
                 score += "04"
                 break;
         }
