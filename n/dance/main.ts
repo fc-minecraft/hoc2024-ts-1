@@ -48,7 +48,7 @@ enum ArmorStand {
 }
 
 //GLOBAL VARIABLES
-const communicationsTimeout = 100;
+const communicationsTimeout = 50;
 
 //%  block="HOC2024" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc {
