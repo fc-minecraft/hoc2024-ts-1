@@ -7,8 +7,6 @@ namespace hoc {
 // TUTORIAL ACTIVITY
     /**
      * This function starts the game.
-     * 
-     * Usage Example: raise_hand()
      */  
     //% block="raise hand"
     export function raise_hand(): void {
