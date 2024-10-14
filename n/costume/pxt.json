@@ -1,6 +1,6 @@
 {
     "name": "hoc2024-ts-costume-n",
-    "version": "0.0.119",
+    "version": "0.0.123",
     "description": "",
     "dependencies": {
         "core": "*",
