@@ -58,13 +58,6 @@ namespace hoc {
     //SANDBOX
     /**
      * This function instructs which dance should be done.
-     * 
-     * Usage Example: hoc.dance(Dance.Move8)
-     * 
-     * Valid parameters are:
-     * Dance.GolemGallop, Dance.DolphinDisco, Dance.WitherWave, Dance.MushroomMarch, 
-     * Dance.BlazeBounce, Dance.CreeperClap, Dance.RavagerRomp, Dance.HoglinHandJive, 
-     * Dance.DungeonDig, Dance.AlexAxle, Dance.WardenWhirl
      */    
     //% block="dance step %s"
     export function dance(d: Dance): void {
@@ -111,11 +104,6 @@ namespace hoc {
     /**
      * This function instructs which armor 
      * stand should do which dance.
-     * 
-     * Usage Example: hoc.dance(ArmorStand.One, Dance.Move8)
-     * 
-     * Valid parameters are:
-     * Dance.DolphinDisco, Dance.MushroomMarch, Dance.GolemGallop, Dance.WitherWave
      */
     //% block="armor stand %n dance %d"
     export function armorstand_dance(a: ArmorStand, d: Dance): void {
