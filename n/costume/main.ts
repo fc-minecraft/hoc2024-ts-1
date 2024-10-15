@@ -5,27 +5,27 @@ enum HeadWear {
     //% block="knight helmet"
     //% jres 
     Knight_Helmet,
-    //% block="sun glasses"
-    //% jres 
-    Sun_Glasses,
-    //% block="reading glasses"
-    //% jres 
-    Reading_Glasses,
     //% block="cowboy hat"
     //% jres 
     Cowboy_Hat,
     //% block="astronaut helmet"
     //% jres 
     Astronaut_Helmet,
-    //% block="baseball hat"
-    //% jres 
-    Baseball_Hat,
     //% block="construction helmet"
     //% jres 
     Construction_Helmet,
     //% block="ballerina crown"
     //% jres 
-    Ballerina_Crown
+    Ballerina_Crown,
+    //% block="sun glasses"
+    //% jres 
+    Sun_Glasses,
+    //% block="reading glasses"
+    //% jres 
+    Reading_Glasses,
+    //% block="baseball hat"
+    //% jres 
+    Baseball_Hat
 }
 
 enum HeadWear_Activity {
@@ -51,18 +51,21 @@ enum MidWear {
     //% block="superstar"
     //% jres 
     Superstar_Shirt,
-    //% block="construction shirt"
+    //% block="knight armor"
     //% jres 
-    Construction_Shirt,
+    Knight_Top,
     //% block="cowboy shirt"
     //% jres 
     Cowboy_Shirt,
     //% block="astronaut suit"
     //% jres 
     Astronaut_Top,
-    //% block="knight armor"
+    //% block="construction shirt"
     //% jres 
-    Knight_Top,    
+    Construction_Shirt,
+    //% block="ballerina shirt"
+    //% jres 
+    Ballerina_Shirt,
     //% block="varsity jacket"
     //% jres 
     Varsity_Jacket,
@@ -71,22 +74,19 @@ enum MidWear {
     Green_TShirt,
     //% block="basketball jersey"
     //% jres 
-    Basketball_Jersey,
-    //% block="ballerina shirt"
-    //% jres 
-    Ballerina_Shirt
+    Basketball_Jersey
 }
 
 enum MidWear_Activity {
+    //% block="knight armor"
+    //% jres 
+    Knight_Top,
     //% block="cowboy shirt"
     //% jres 
     Cowboy_Shirt,
     //% block="astronaut suit"
     //% jres 
     Astronaut_Top,
-    //% block="knight armor"
-    //% jres 
-    Knight_Top,
     //% block="ballerina shirt"
     //% jres 
     Ballerina_Shirt,
@@ -99,9 +99,6 @@ enum LowerWear {
     //% block="superstar"
     //% jres 
     Superstar_Pants,
-    //% block="swim shorts"
-    //% jres 
-    Swim_Shorts,
     //% block="knight leggings"
     //% jres 
     Knight_Legs,
@@ -111,18 +108,21 @@ enum LowerWear {
     //% block="astronaut pants"
     //% jres 
     Astronaut_Legs,
-    //% block="khaki shorts"
-    //% jres 
-    Khaki_Shorts,
-    //% block="boots"
-    //% jres 
-    Black_Boots,
     //% block="construction jeans"
     //% jres 
     Construction_Pants,
     //% block="ballerina tutu"
     //% jres 
-    Ballerina_Tutu
+    Ballerina_Tutu,
+    //% block="swim shorts"
+    //% jres 
+    Swim_Shorts,
+    //% block="khaki shorts"
+    //% jres 
+    Khaki_Shorts,
+    //% block="boots"
+    //% jres 
+    Black_Boots
 }
 
 enum LowerWear_Activity {
