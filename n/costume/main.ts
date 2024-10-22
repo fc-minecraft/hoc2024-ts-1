@@ -29,21 +29,21 @@ enum HeadWear {
 }
 
 enum HeadWear_Activity {
-    //% block="knight helmet"
-    //% jres 
-    Knight_Helmet,
-    //% block="cowboy hat"
-    //% jres 
-    Cowboy_Hat,
     //% block="astronaut helmet"
     //% jres 
     Astronaut_Helmet,
-    //% block="ballerina crown"
+    //% block="cowboy hat"
     //% jres 
-    Ballerina_Crown,
+    Cowboy_Hat,
     //% block="construction helmet"
     //% jres 
-    Construction_Helmet
+    Construction_Helmet,
+    //% block="knight helmet"
+    //% jres 
+    Knight_Helmet,
+    //% block="ballerina crown"
+    //% jres 
+    Ballerina_Crown
 }
 
 
@@ -78,21 +78,21 @@ enum MidWear {
 }
 
 enum MidWear_Activity {
-    //% block="knight armor"
-    //% jres 
-    Knight_Top,
-    //% block="cowboy shirt"
-    //% jres 
-    Cowboy_Shirt,
     //% block="astronaut suit"
     //% jres 
     Astronaut_Top,
-    //% block="ballerina shirt"
+    //% block="cowboy shirt"
     //% jres 
-    Ballerina_Shirt,
+    Cowboy_Shirt,
     //% block="construction shirt"
     //% jres 
-    Construction_Shirt
+    Construction_Shirt,
+    //% block="knight armor"
+    //% jres 
+    Knight_Top,
+    //% block="ballerina shirt"
+    //% jres 
+    Ballerina_Shirt
 }
 
 enum LowerWear {
@@ -126,21 +126,21 @@ enum LowerWear {
 }
 
 enum LowerWear_Activity {
-    //% block="knight leggings"
-    //% jres 
-    Knight_Legs,
-    //% block="cowboy jeans"
-    //% jres 
-    Cowboy_Pants,
     //% block="astronaut pants"
     //% jres 
     Astronaut_Legs,
-    //% block="ballerina tutu"
+    //% block="cowboy jeans"
     //% jres 
-    Ballerina_Tutu,
+    Cowboy_Pants,
     //% block="construction jeans"
     //% jres 
-    Construction_Pants
+    Construction_Pants,
+    //% block="knight leggings"
+    //% jres 
+    Knight_Legs,
+    //% block="ballerina tutu"
+    //% jres 
+    Ballerina_Tutu
 }
 
 //GLOBAL VARIABLES
