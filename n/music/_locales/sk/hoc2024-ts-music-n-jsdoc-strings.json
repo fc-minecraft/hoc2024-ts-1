@@ -1,6 +1,6 @@
 {
-  "hoc.add_instrument": "This function allows you to add one of 8 different instruments.\r\n* Usage Example: hoc.add_instrument(Instrument.Guitar)\r\n* Valid parameters are:\r\nInstrument.Bass, Instrument.Bells, Instrument.Flute, Instrument.Guitar\r\nInstrument.Piano, Instrument.Synth, Instrument.Villager, Instrument.Xylophone",
-  "hoc.drums": "This function allows you to start or stop a drum beat.\r\n* Usage Example: hoc.drums(Drums.Fast)\r\n* Valid parameters are:\r\nDrums.Slow, Drums.Medium, or Drums.Fast, Drums.None",
-  "hoc.note": "This function allows you to set what note to play.\r\n* Usage Example: hoc.note(Note.Do)\r\n* Valid parameters are:\r\nNote.Do, Note.Re, Note.Mi, Note.Fa, Note.So, Note.La, Note.Ti",
-  "hoc.remove_instrument": "This function allows you to remove any instrument that's currently\r\nadded.\r\n* Usage Example: hoc.remove_instrument(Instrument.Guitar)\r\n* Valid parameters are:\r\nInstrument.Bass, Instrument.Bells, Instrument.Flute, Instrument.Guitar\r\nInstrument.Piano, Instrument.Synth, Instrument.Villager, Instrument.Xylophone"
+  "hoc.add_instrument": "Táto funkcia vám umožňuje pridať jeden z 8 rôznych nástrojov.\r\n* Príklad použitia: hoc.add_instrument(Instrument.Guitar)\r\n* Platné parametre sú:\r\nInstrument.Bass, Instrument.Bells, Instrument.Flute, Instrument.Guitar\r\nInstrument.Piano, Instrument.Synth, Instrument.Villager, Instrument.Xylophone",
+  "hoc.drums": "Táto funkcia vám umožňuje pustiť alebo zastaviť rytmus bicích.\r\n* Príklad použitia: hoc.drums(Drums.Fast)\r\n* Platné parametre sú:\r\nDrums.Slow, Drums.Medium alebo Drums.Fast, Drums.None",
+  "hoc.note": "Táto funkcia vám umožňuje nastaviť, aký tón sa zahrá.\r\n* Príklad: hoc.note (Note.Do )\r\n* Platné parametre sú:\r\nNote.Do, Note.Re, Note.Mi, Note.Fa, Note.So, Note.La, Note.Ti",
+  "hoc.remove_instrument": "Táto funkcia vám umožňuje odstrániť akýkoľvek nástroj, ktorý je v danej chvíli\r\npridaný.\r\n* Príklad: hoc.remove_instrument(Instrument.Guitar)\r\n* Platné parametre sú:\r\nInstrument.Bass, Instrument.Bells, Instrument.Flute, Instrument.Guitar\r\nInstrument.Piano, Instrument.Synth, Instrument.Villager, Instrument.Xylophone"
 }
