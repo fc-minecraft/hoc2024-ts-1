@@ -1,3 +1,3 @@
 {
-  "hoc.raise_hand": "This function starts the game.\r\n* Usage Example: raise_hand()"
+  "hoc.raise_hand": "Ez a függvény elindítja a játékot.\r\n* Példa a használatára: raise_hand()"
 }
