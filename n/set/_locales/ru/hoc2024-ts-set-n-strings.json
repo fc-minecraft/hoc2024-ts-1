@@ -1,7 +1,7 @@
 {
   "Biome.City|block": "город",
   "Biome.Desert|block": "пустыня",
-  "Biome.End|block": "конец",
+  "Biome.End|block": "'эндер мир'",
   "Biome.Forest|block": "лес",
   "Biome.Jungle|block": "джунгли",
   "Biome.Nether|block": "нижний мир",
