@@ -105,7 +105,7 @@ namespace hoc {
      * This function instructs which armor 
      * stand should do which dance.
      */
-    //% block="armor stand %n dance %d"
+    //% block="Стойка для брони %n танцует %d"
     export function armorstand_dance(a: ArmorStand, d: Dance): void {
         let score = "0"
         switch (a) {
@@ -141,7 +141,7 @@ namespace hoc {
     }
 
     //ACTIVITY
-    //% block="armor stand %s dance %d"
+    //% block="Стойка для брони %s танцует %d"
     export function _dance_activity(s: ArmorStand, d: _Dances_Actvity): void {
         let score = "0"
 
